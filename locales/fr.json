@@ -1,0 +1,284 @@
+{
+  "header": {
+    "lessons": "Leçons",
+    "tests": "Tests",
+    "blog": "Blog",
+    "settings": "Ouvrir les paramètres"
+  },
+  "main": {
+    "back": "Retour",
+    "landingTitle": "Test de Vitesse de Frappe",
+    "landingSubtitle": "À quelle vitesse pouvez-vous taper ? Découvrons-le !"
+  },
+  "landing": {
+    "configureTitle": "Configurez Votre Test",
+    "startTyping": "Commencer à Taper",
+    "tooltipDifficulty": "Ajuste la complexité du texte. Facile utilise des mots simples. Moyen introduit des mots plus longs et une ponctuation de base. Difficile propose un vocabulaire et une structure complexes.",
+    "tooltipTimeLimit": "Définit la durée pour le mode 'Temps'. Tapez autant que vous le pouvez avant la fin du temps imparti.",
+    "tooltipWordCount": "Définit la longueur pour le mode 'Mots'. Le test se termine après que vous avez tapé le nombre de mots sélectionné.",
+    "tooltipMode": "Changez le format du test. 'Temps' est une course contre la montre. 'Mots' est un nombre défini de mots. 'Citation' consiste à taper une citation célèbre.",
+    "time": "Temps",
+    "words": "Mots",
+    "quote": "Citation",
+    "difficulty": {
+      "easy": "Facile",
+      "medium": "Moyen",
+      "hard": "Difficile"
+    },
+    "detailedArticles": {
+      "title": "Articles Détaillés",
+      "subtitle": "Apprenez-en plus sur l'art de la dactylographie et les fonctionnalités de ce site web."
+    }
+  },
+  "test": {
+    "reset": "Réinitialiser",
+    "pause": "Pause",
+    "resume": "Reprendre",
+    "pausedTitle": "En Pause",
+    "pausedMessage": "Cliquez ou appuyez sur une touche pour reprendre",
+    "tooltipRestart": "Redémarrer le test actuel (Échap)",
+    "tooltipPause": "Mettre le test en pause",
+    "tooltipResume": "Reprendre le test",
+    "startTyping": "Commencez à taper n'importe quel caractère pour démarrer le test."
+  },
+  "results": {
+    "title": "Test Terminé !",
+    "subtitle": "Voici vos resultados :",
+    "wpm": "MPM",
+    "accuracy": "Précision",
+    "retry": "Réessayer",
+    "tryAgain": "Recommencer",
+    "changeSettingsPrompt": "Ou appuyez sur <1>Entrée</1> pour modifier les paramètres",
+    "quoteBy": "Citation de"
+  },
+  "history": {
+    "title": "Votre Progression",
+    "noHistory": "Effectuez au moins deux tests pour voir votre graphique de progression.",
+    "combined": "Combiné",
+    "wpm": "MPM",
+    "accuracy": "Précision"
+  },
+  "faq": {
+    "title": "FAQ",
+    "q1": "Comment augmenter ma vitesse de frappe ?",
+    "a1": "Une pratique constante est essentielle. Concentrez-vous sur la précision avant la vitesse. Utilisez tous vos doigts et évitez de regarder le clavier. Des sessions de pratique courtes et régulières sont plus efficaces que des sessions longues et peu fréquentes.",
+    "q2": "À quelle vitesse devrais-je taper ?",
+    "a2": "La vitesse de frappe moyenne est d'environ 40 MPM (Mots Par Minute). Une vitesse de 55 MPM ou plus est considérée comme bonne. Les dactylographes de compétition atteignent souvent des vitesses de plus de 100 MPM.",
+    "q3": "Comment la vitesse de frappe est-elle mesurée ?",
+    "a3": "La vitesse de frappe est mesurée en Mots Par Minute (MPM). Un \"mot\" est normalisé à cinq caractères, y compris les espaces et la ponctuation. La formule est (nombre total de caractères tapés / 5) / temps en minutes.",
+    "q4": "Pourquoi est-il important de faire un test de vitesse de frappe ?",
+    "a4": "Faire un test de vitesse de frappe vous aide à évaluer vos compétences actuelles, à suivre vos améliorations au fil du temps et à identifier vos faiblesses. C'est un excellent moyen de rester motivé pendant que vous vous entraînez."
+  },
+  "footer": {
+    "builtWith": "copyright 2025 typing test",
+    "privacyPolicy": "Politique de Confidentialité",
+    "termsOfService": "Conditions d'Utilisation",
+    "feedback": "Commentaires",
+    "help": "Aide"
+  },
+  "lessons": {
+    "title": "Leçons de Dactylographie",
+    "subtitle": "Développez vos compétences à partir de zéro avec des leçons guidées.",
+    "startLesson": "Commencer la Leçon",
+    "searchPlaceholder": "Rechercher des leçons...",
+    "noResults": "Aucune leçon trouvée correspondant à votre recherche.",
+    "homeRowFJTitle": "Rangée de Repos, Touches F et J",
+    "homeRowFJDesc": "Apprenez les bases de la dactylographie en maîtrisant les touches de la rangée de repos.",
+    "homeRowDKTitle": "Rangée de Repos, Touches D et K",
+    "homeRowDKDesc": "Étendez votre portée sur la rangée de repos avec les touches D et K.",
+    "homeRowSLTitle": "Rangée de Repos, Touches S et L",
+    "homeRowSLDesc": "Continuez à développer votre mémoire musculaire avec S et L.",
+    "homeRowA_Title": "Rangée de Repos, Touches A et ;",
+    "homeRowA_Desc": "Complétez la rangée de repos avec les touches A et point-virgule.",
+    "homeRowWords1Title": "Mots de la Rangée de Repos",
+    "homeRowWords1Desc": "Entraînez-vous à former des mots simples en utilisant uniquement la rangée de repos.",
+    "topRowRUTitle": "Rangée Supérieure, Touches R et U",
+    "topRowRUDesc": "Atteignez la rangée supérieure et apprenez les touches R et U.",
+    "topRowEITitle": "Rangée Supérieure, Touches E et I",
+    "topRowEIDesc": "Entraînez-vous avec deux des voyelles les plus courantes, E et I.",
+    "bottomRowVMTitle": "Rangée Inférieure, Touches V et M",
+    "bottomRowVMDesc": "Apprenez à taper V et M sur la rangée inférieure sans regarder.",
+    "punctuationTitle": "Pratique de la Ponctuation",
+    "punctuationDesc": "Maîtrisez la ponctuation essentielle comme les points et les virgules.",
+    "topRowTYTitle": "Rangée Supérieure, Touches T et Y",
+    "topRowTYDesc": "Continuez votre pratique sur la rangée supérieure avec T et Y.",
+    "topRowWOTitle": "Rangée Supérieure, Touches W et O",
+    "topRowWODesc": "Apprenez les touches W et O pour élargir votre vocabulaire.",
+    "bottomRowCCommaTitle": "Rangée Inférieure, C et Virgule",
+    "bottomRowCCommaDesc": "Pratiquez la touche C et renforcez vos compétences avec la virgule.",
+    "shiftKeyLeftTitle": "Pratique de la Touche Maj Gauche",
+    "shiftKeyLeftDesc": "Apprenez à mettre des majuscules avec la touche Maj gauche.",
+    "shiftKeyRightTitle": "Pratique de la Touche Maj Droite",
+    "shiftKeyRightDesc": "Maîtrisez les majuscules avec la touche Maj droite.",
+    "numberRow10Title": "Rangée de Chiffres, 1 et 0",
+    "numberRow10Desc": "Une introduction à la frappe des chiffres avec 1 et 0.",
+    "commonWordsTitle": "Pratique des Mots Courants",
+    "commonWordsDesc": "Tapez certains des mots les plus fréquents en français.",
+    "topRowQPTitle": "Rangée Supérieure, Touches Q et P",
+    "topRowQPDesc": "Complétez la rangée supérieure avec les touches Q et P.",
+    "bottomRowXPeriodTitle": "Rangée Inférieure, X et Point",
+    "bottomRowXPeriodDesc": "Entraînez-vous avec la touche X et le point pour terminer les phrases.",
+    "bottomRowZSlashTitle": "Rangée Inférieure, Touches Z et /",
+    "bottomRowZSlashDesc": "Apprenez les dernières lettres de la rangée inférieure, Z et /.",
+    "numberRow29Title": "Rangée de Chiffres, 2 et 9",
+    "numberRow29Desc": "Développez vos compétences en frappe de chiffres avec 2 et 9.",
+    "numberRow38Title": "Rangée de Chiffres, 3 et 8",
+    "numberRow38Desc": "Continuez à pratiquer la rangée de chiffres avec 3 et 8.",
+    "combinedRowFluencyTitle": "Fluidité entre les Rangées",
+    "combinedRowFluencyDesc": "Entraînez-vous à taper des mots qui utilisent des touches de toutes les rangées.",
+    "capitalizationPracticeTitle": "Pratique de la Majuscule",
+    "capitalizationPracticeDesc": "Améliorez votre utilisation de la touche Maj en mettant des majuscules aux phrases.",
+    "commonSymbolsTitle": "Symboles Courants",
+    "commonSymbolsDesc": "Entraînez-vous à taper des symboles courants comme ?, ! et les guillemets.",
+    "longWordPracticeTitle": "Pratique des Mots Longs",
+    "longWordPracticeDesc": "Mettez-vous au défi en tapant des mots plus longs et complexes.",
+    "pangramPracticeTitle": "Pratique des Pangrammes",
+    "pangramPracticeDesc": "Tapez des phrases qui contiennent chaque lettre de l'alphabet."
+  },
+  "lesson": {
+    "accuracy": "Précision",
+    "complete": "Leçon Terminée !",
+    "retry": "Réessayer la Leçon",
+    "backToLessons": "Retour aux Leçons",
+    "nextLesson": "Leçon Suivante",
+    "upNext": "À suivre :"
+  },
+  "stats": {
+    "avgSpeed": "Vit. Moyenne",
+    "wpm": "MPM",
+    "avgAcc": "Préc. Moyenne",
+    "typingTime": "Temps de Frappe",
+    "dailyGoal": "Objectif Quotidien"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "appearanceTitle": "Apparence",
+    "theme": "Thème",
+    "specificThemes": "Thèmes Spécifiques",
+    "light": "Clair",
+    "dark": "Sombre",
+    "system": "Système"
+  },
+  "certificate": {
+    "generate": "Générer un Certificat",
+    "title": "Certificat de Réussite",
+    "certifyLine": "Ce certificat atteste que",
+    "achievedRankLine": "a atteint le rang de",
+    "statsLine": "avec une vitesse moyenne de {{wpm}} MPM et une précision de {{accuracy}}% sur {{tests}} tests.",
+    "rank": {
+      "dedicated": "Dactylographe Appliqué",
+      "proficient": "Dactylographe Compétent",
+      "expert": "Dactylographe Expert",
+      "virtuoso": "Dactylographe Virtuose"
+    },
+    "quotes": {
+      "beginner1": "\"Un voyage de mille lieues commence par un premier pas.\"",
+      "beginner2": "\"Le succès est la somme de petits efforts, répétés jour après jour.\"",
+      "intermediate1": "\"Peu importe la lenteur à laquelle vous avancez tant que vous ne vous arrêtez pas.\"",
+      "intermediate2": "\"La pratique n'est pas ce que vous faites une fois que vous êtes bon. C'est ce que vous faites qui vous rend bon.\"",
+      "expert1": "\"Nous sommes ce que nous faisons de manière répétée. L'excellence n'est donc pas un acte, mais une habitude.\"",
+      "expert2": "\"La vitesse est un sous-produit de la précision.\""
+    },
+    "namePrompt": "Entrez Votre Nom",
+    "namePlaceholder": "Ex. Alex Martin",
+    "print": "Imprimer",
+    "download": "Télécharger",
+    "downloading": "Téléchargement...",
+    "close": "Fermer",
+    "dateOfIssue": "Date de Délivrance",
+    "signature": "Signature",
+    "signatureName": "TypingTest.App",
+    "testsCompleted": "Tests Terminés"
+  },
+  "blog": {
+    "title": "Notre Blog",
+    "subtitle": "Conseils, astuces et aperçus pour vous aider à devenir un meilleur dactylo.",
+    "readMore": "Lire la Suite",
+    "backToBlog": "Retour au Blog",
+    "post1": {
+      "title": "Comprendre les MPM et la Précision : Les Piliers Jumeaux de la Dactylographie",
+      "summary": "Allez au-delà des bases des MPM et de la Précision. Apprenez comment ces métriques clés sont calculées dans n'importe quel test de dactylographie en ligne, pourquoi une haute précision au test de dactylographie est votre arme secrète pour la vitesse, et comment interpréter vos resultados efficacement.",
+      "content": "Lorsque vous passez un test de dactylographie en ligne, deux métriques se démarquent toujours : les Mots Par Minute (MPM) et la Précision. Il est facile de se laisser emporter par l'excitation d'un score MPM élevé, mais pour devenir un dactylographe vraiment compétent, vous devez comprendre la relation profonde et symbiotique entre ces deux chiffres. Ce sont les piliers jumeaux qui soutiennent toute frappe efficace, que vous passiez un test de dactylographie en anglais occasionnel ou une certification professionnelle.\\n\\nTout d'abord, démystifions les MPM. Cette métrique mesure votre vitesse brute. Dans un test de dactylographie standardisé, un 'mot' est défini comme cinq frappes, incluant les lettres, les espaces et la ponctuation. Donc, si vous tapez 300 caractères en une minute, votre MPM brut est de 60. Cette application calcule vos MPM en temps réel, vous donnant un retour instantané sur votre rythme pendant n'importe quel test de vitesse de frappe. Cependant, il est crucial de faire la distinction entre les MPM Bruts (vitesse brute) et les MPM Nets (vitesse après prise en compte des erreurs). Alors que de nombreuses applications se concentrent sur la vitesse brute, votre vitesse réelle et pratique est toujours le chiffre net, car les erreurs prennent du temps à corriger dans le monde réel. Une bonne moyenne au test de dactylographie pour la plupart des adultes est d'environ 40 MPM, mais avec de la pratique sur un test de dactylographie gratuit comme celui-ci, atteindre 60-70 MPM est un objectif très réalisable.\\n\\nCela nous amène au second pilier, et sans doute le plus important : la précision du test de dactylographie. La précision est le pourcentage de caractères que vous tapez correctement. Cela peut sembler moins excitant que la vitesse brute, mais c'est le véritable fondement d'un dactylographe rapide. Imaginez deux dactylos : l'un tape à 80 MPM avec 90% de précision, et l'autre à 60 MPM avec 99% de précision. Le premier dactylo fait 8 erreurs par minute, chacune l'obligeant à s'arrêter, à appuyer plusieurs fois sur la touche retour arrière et à retaper. Le second dactylo fait moins d'une erreur par minute. Dans n'importe quel scénario pratique, le second dactylo, plus précis, est bien plus efficace. C'est pourquoi notre application de test de dactylographie affiche votre précision de manière proéminente. Votre objectif initial devrait toujours être de maintenir une précision de 98% ou plus. Ce n'est qu'une fois que vous pouvez le faire de manière constante que vous devriez vous concentrer sur l'augmentation de votre vitesse.\\n\\nLa magie opère lorsque vous réalisez que la vitesse est un sous-produit de la précision. Lorsque vous entraînez vos doigts à frapper les bonnes touches à chaque fois, vous construisez une mémoire musculaire propre et efficace. Vous éliminez les mouvements hésitants et saccadés de la correction des erreurs. Vos doigts commencent à glisser sur le clavier. En continuant à vous entraîner sur notre test de dactylographie gratuit, en vous concentrant sur des frappes parfaites, votre vitesse commencera à augmenter naturalmente et durablement. Utilisez ce test de dactylographie en ligne pour construire cette base solide. Concentrez-vous d'abord sur la précision de votre test de dactylographie, et les resultados du test de frappe rapide suivront."
+    },
+    "post2": {
+      "title": "Une Visite Guidée de la Section des Leçons",
+      "summary": "Le chemin vers un score de 100 MPM commence ici. Découvrez comment nos leçons structurées vous transforment de débutant en expert prêt pour n'importe quel test de dactylographie en anglais avancé, en commençant par les fondamentaux et en progressant vers des défis complexes.",
+      "content": "Si vous êtes sérieux au sujet de l'amélioration de vos compétences, la section 'Leçons' est votre terrain d'entraînement ultime. Bien que passer un test de dactylographie aléatoire soit excellent pour l'étalonnage, nos leçons fournissent un chemin structuré et méthodique vers la maîtrise. Elles sont conçues pour construire la mémoire musculaire fondamentale requise pour exceller dans n'importe quel environnement de frappe, d'un simple test de dactylographie en anglais à un test de dactylographie avancé exigeant.\\n\\nLe voyage commence au tout début, avec ce qui pourrait être considéré comme un 'test de dactylographie abc' pour vos doigts : la rangée de repos. Chacune des leçons initiales n'introduit que quelques nouvelles touches. Cette répétition délibérée et ciblée est au cœur d'un apprentissage efficace. Elle entraîne vos doigts à savoir où se trouve chaque touche sans pensée consciente, ce qui est la définition de la dactylographie. Se précipiter à travers cette étape est une erreur courante ; prenez votre temps pour atteindre une précision quasi parfaite sur ces leçons fondamentales avant de continuer. Pensez-y comme apprendre l'alphabet avant d'essayer d'écrire un roman.\\n\\nAu fur et à mesure de votre progression, les leçons deviennent plus complexes. Vous passerez des lettres individuelles à la formation de mots, puis à des phrases complètes. Nous introduisons la ponctuation, les majuscules avec les touches Maj, et les chiffres. Cette surcharge progressive garantit que vous êtes toujours mis au défi mais jamais dépassé. Ces exercices sont spécifiquement conçus pour vous préparer à la variété que vous rencontrerez dans un test de dactylographie en conditions réelles. Vous pratiquerez même les compétences nécessaires pour un 'test de dactylographie de a à z' (également connu sous le nom de test de pangramme), où vous devez taper des phrases contenant chaque lettre de l'alphabet, garantissant qu'aucune touche n'est laissée de côté.\\n\\nNos leçons sont la préparation parfaite pour un test de dactylographie en anglais avancé. Elles vous enseignent non seulement la disposition du clavier mais vous exercent également sur les combinaisons de lettres et les motifs de mots courants dans la langue française. Une fois toutes les leçons terminées, vous aurez la confiance et la mémoire musculaire pour relever n'importe quel défi. Ne vous souciez pas de vos MPM pendant les leçons ; l'unique objectif doit être la précision et la bonne forme. Une fois diplômé des leçons, vous pouvez retourner à notre section de test de vitesse de frappe pour voir à quel point votre travail acharné a porté ses fruits. Vos doigts connaîtront le chemin."
+    },
+    "post3": {
+      "title": "Personnalisez Votre Expérience : Un Aperçu des Paramètres",
+      "summary": "Apprenez à adapter chaque session de pratique à vos objectifs spécifiques. Découvrez comment utiliser différents modes et paramètres pour simuler des défis comme un test de dactylographie de chat en direct ou un test de dactylographie tout en minuscules, faisant de cette application de test de dactylographie gratuit votre coach de frappe personnel.",
+      "content": "Un environnement de pratique personnalisé est un outil puissant pour l'amélioration. Une approche générique et universelle d'un test de dactylographie peut mener à la stagnation. C'est pourquoi cette application de test de dactylographie gratuit vous donne un contrôle étendu sur vos sessions de pratique, vous permettant de cibler les faiblesses et de simuler des défis du monde réel avec précision.\\n\\nVotre premier niveau de personnalisation est le sélecteur de 'Mode de Jeu' sur la page principale. C'est plus qu'une simple préférence ; c'est un choix stratégique. Le mode 'Temps' est le test de vitesse de frappe classique, parfait pour développer l'endurance et performer sous pression. Le mode 'Mots' est idéal pour des sprints courts et ciblés afin de pousser votre vitesse de pointe. Le mode 'Citation' met fortement l'accent sur la précision, pénalisant tout écart par rapport au texte source. Un dactylographe expert utilise les trois modes pour développer un ensemble de compétences bien équilibré.\\n\\nAu-delà du mode, vous pouvez ajuster le contenu. Le paramètre de difficulté (Facile, Moyen, Difficile) modifie la complexité du vocabulaire et de la structure des phrases, vous permettant d'adapter le défi à mesure que vous vous améliorez. Ceci est essentiel pour quiconque se prépare à un test de dactylographie avancé. Mais vous pouvez aussi simuler des scénarios spécifiques. Par exemple, avez-vous déjà envisagé de vous entraîner pour un 'test de dactylographie de chat en direct' ? Dans le service client ou la communication d'équipe rapide, vous tapez par courtes rafales rapides. Vous pouvez simuler cela en choisissant le mode 'Mots' avec un faible nombre de mots (comme 10 ou 25). Cela entraîne un type de vitesse différent de celui d'un test marathon de 5 minutes.\\n\\nQu'en est-il des défis techniques spécifiques ? Certains tests de codage ou tâches de saisie de données pueden ne pas nécessiter de majuscules. Vous pouvez pratiquer cela en ignorant consciemment la touche Maj pour simuler un 'test de dactylographie tout en minuscules', en vous concentrant uniquement sur la vitesse de vos touches de lettres. Le panneau des paramètres, accessible depuis l'en-tête, permet une personnalisation plus poussée. Vous pouvez choisir parmi divers thèmes visuels pour en trouver un qui soit agréable à vos yeux, et vous pouvez affiner le retour audio à votre convenance. En combinant toutes ces options, vous pouvez transformer cette plateforme d'un simple test de frappe rapide en un outil d'entraînement sophistiqué, parfaitement adapté pour vous aider à atteindre vos objectifs."
+    },
+    "post4": {
+      "title": "Analyser Vos Progrès : Comprendre le Graphique d'Historique",
+      "summary": "Vos données racontent l'histoire de votre parcours de dactylographie. Apprenez à utiliser les statistiques et le graphique d'historique dans notre application de test de dactylographie pour suivre votre moyenne au test de dactylographie, diagnostiquer les problèmes, surmonter les plateaux et devenir un dactylographe plus constant.",
+      "content": "Le vieil adage 'Ce qui est mesuré est géré' est particulièrement vrai lors de l'apprentissage d'une nouvelle compétence. Chaque test de dactylographie en ligne que vous terminez fournit des données précieuses. Notre application de test de dactylographie enregistre et visualise automatiquement ces données, les transformant en votre rapport de progression personnel. Apprendre à lire ce rapport est la clé d'une pratique intelligente et efficace.\\n\\nVotre parcours commence avec les statistiques de haut niveau affichées directement sur la page d'accueil. Vous y trouverez votre 'moyenne au test de dactylographie' globale pour les MPM et la précision. Cela vous donne un aperçu rapide de votre niveau de compétence actuel. Êtes-vous un dactylographe à 40 MPM ou à 60 MPM en moyenne ? Votre 'précision moyenne au test de dactylographie' est-elle supérieure aux 98% recommandés ? Ce tableau de bord suit également votre temps total passé à taper, un témoignage de votre dévouement, et inclut un suivi d'objectif quotidien pour vous aider à développer une habitude de pratique constante.\\n\\nPour une analyse plus approfondie, consultez le Graphique d'Historique. Ce graphique visualise les resultados de vos 10 derniers tests, racontant l'histoire de vos performances récentes. Pouvez-vous voir une tendance à la hausse constante des MPM ? C'est super ! Mais regardez de plus près. Pendant que votre ligne de MPM monte, que fait votre ligne de précision ? Si elle baisse, c'est un signe clair que vous poussez la vitesse au détriment de la précision — une erreur courante. C'est le signal pour vous de ralentir pendant quelques sessions et de vous reconcentrer sur les fondamentaux. Inversement, si votre vitesse et votre précision stagnent, vous avez peut-être atteint un plateau. C'est le moment de changer votre routine, peut-être en augmentant la difficulté ou en essayant un mode de test différent.\\n\\nCette approche basée sur les données est ce qui sépare la pratique occasionnelle de l'entraînement délibéré. Le graphique vous aide à diagnostiquer vos propres faiblesses. Vos resultados sont-ils incohérents ? Cela pourrait indiquer des problèmes de concentration ou de fatigue. Votre précision est-elle constamment basse ? Il est temps de revoir la section des Leçons. En examinant régulièrement vos performances dans notre application de test de dactylographie, vous pouvez cesser de pratiquer à l'aveugle et commencer à vous entraîner intelligemment. Laissez les données être votre guide sur le chemin pour devenir un dactylographe plus rapide et plus précis."
+    },
+    "post5": {
+      "title": "Ergonomie pour Dactylos : Aménagez Votre Espace de Travail pour la Réussite",
+      "summary": "Apprenez à optimiser l'aménagement de votre bureau, votre chaise et votre posture pour taper plus vite, plus longtemps et sans douleur.",
+      "content": "Votre installation physique joue un rôle énorme dans votre capacité à taper. Une mauvaise ergonomie peut entraîner de l'inconfort, de la fatigue et même des microtraumatismes répétés (TMR), ce qui nuira à votre progression. Quelques petits ajustements peuvent faire toute la différence.\\n\\nD'abord, votre chaise et votre posture. Asseyez-vous droit, les pieds à plat sur le sol. Vos coudes doivent former un angle d'environ 90 degrés, avec les poignets droits et non pliés vers le haut ou le bas. Ajustez la hauteur de votre chaise pour y parvenir. Votre écran doit être positionné de manière à ce que le haut de l'écran soit au niveau des yeux ou légèrement en dessous, afin d'éviter les tensions au niveau du cou.\\n\\nEnsuite, votre clavier et votre souris. Placez votre clavier directement devant vous, centré par rapport à votre corps. Lorsque vous placez vos doigts sur la rangée de repos, vos bras doivent être détendus. Évitez de tendre les bras. Si vous utilisez un repose-poignets, assurez-vous qu'il soutient la paume de votre main, et non votre poignet lui-même, pour maintenir un bon alignement.\\n\\nEnfin, n'oubliez pas de faire des pauses ! La règle du 20-20-20 est une excellente directive : toutes les 20 minutes, regardez quelque chose à 20 pieds (6 mètres) de distance pendant 20 secondes. Levez-vous, étirez-vous et reposez vos mains et vos yeux. Un dactylographe à l'aise est un dactylographe plus rapide et plus constant."
+    },
+    "post6": {
+      "title": "Au-delà des Bases : Stratégies de Pratique Efficaces",
+      "summary": "Vous stagnez à un plateau de dactylographie ? Découvrez des techniques de pratique avancées comme les exercices ciblés, la pratique délibérée et comment utiliser les fonctionnalités de cette application pour surmonter les obstacles.",
+      "content": "Vous avez donc maîtrisé la rangée de repos et vos MPM augmentent, mais soudain, votre progression s'arrête. C'est un plateau de dactylographie, et c'est tout à fait normal. Pour le surmonter, vous devez passer de la simple répétition à la pratique délibérée.\\n\\nLa pratique délibérée consiste à identifier vos faiblesses spécifiques et à les cibler. Votre précision baisse-t-elle sur les mots avec 'q' ou 'z' ? Avez-vous du mal à mettre des majuscules avec votre auriculaire ? Utilisez la section 'Leçons' pour travailler ces touches ou compétences spécifiques. Taper à plusieurs reprises 'Portez ce vieux whisky au juge blond qui fume' est excellent pour la pratique générale, mais des exercices ciblés corrigeront vos erreurs récurrentes.\\n\\nUne autre stratégie clé est de pousser juste au-delà de votre zone de confort. Si votre vitesse moyenne est de 50 MPM, ne visez pas seulement 50 MPM en pratique. Essayez de pousser jusqu'à 55 MPM, même si votre précision baisse légèrement. Cela force vos doigts à bouger plus vite et à construire une nouvelle mémoire musculaire. Après quelques-unes de ces sessions de 'sprint', revenez à 50 MPM et concentrez-vous sur le retour à une précision de 98 % ou plus. Ce cycle de recherche de vitesse puis de consolidation avec la précision est l'un des moyens les plus rapides de s'améliorer.\\n\\nEnfin, la régularité est plus importante que l'intensité. S'entraîner 15 minutes chaque day est bien plus efficace qu'une session de deux heures une fois par semaine. Utilisez le suivi de l''Objectif Quotidien' sur la page d'accueil pour vous aider à prendre cette habitude."
+    },
+    "post7": {
+      "title": "Débloquez la Vitesse avec les Raccourcis Clavier",
+      "summary": "La dactylographie ne se limite pas à la rédaction de prose. Augmentez votre productivité globale en maîtrisant les raccourcis clavier essentiels pour naviguer dans le texte et gérer les applications.",
+      "content": "De bonnes compétences en dactylographie vous font gagner du temps lors de la rédaction, mais qu'en est-il de toutes les autres choses que vous faites sur un ordinateur ? La maîtrise des raccourcis clavier est le niveau supérieur de l'efficacité. Réduire votre dépendance à la souris pour les tâches courantes peut accélérer considérablement votre flux de travail.\\n\\nCommençons par l'essentiel. Tout le monde connaît Ctrl/Cmd + C (copier) et Ctrl/Cmd + V (coller), mais n'oubliez pas leurs frères et sœurs : Ctrl/Cmd + X (couper) pour déplacer du texte, Ctrl/Cmd + Z (annuler) pour annuler une erreur, et Ctrl/Cmd + S pour enregistrer fréquemment votre travail.\\n\\nLa navigation dans le texte est un autre gain de temps considérable. Au lieu de cliquer avec la souris, utilisez les touches fléchées + Ctrl/Cmd pour sauter entre les mots. Maintenir la touche Maj enfoncée pendant cette opération sélectionnera le texte au fur et à mesure de votre saut (par exemple, Maj + Ctrl + Flèche droite sélectionne le mot suivant). Les touches Début et Fin vous amèneront au début ou à la fin d'une ligne, et l'ajout de Ctrl/Cmd vous fera sauter au début ou à la fin de tout le document.\\n\\nNe vous arrêtez pas là. Apprenez les raccourcis pour vos applications les plus utilisées. Alt + Tab (ou Cmd + Tab sur Mac) pour passer d'une fenêtre ouverte à l'autre est indispensable. Ctrl + T pour ouvrir un nouvel onglet de navigateur et Ctrl + W pour en fermer un changeront votre façon de naviguer sur le web. Chaque seconde que vous gagnez en gardant les mains sur le clavier s'additionne, faisant de vous un utilisateur d'ordinateur plus efficace et plus puissant."
+    }
+  },
+  "feedback": {
+    "title": "Envoyer un Commentaire",
+    "description": "Avez-vous une suggestion ou avez-vous trouvé un bug ? Nous serions ravis de vous lire. Vos commentaires nous aident à nous améliorer.",
+    "nameLabel": "Votre Nom",
+    "namePlaceholder": "Ex., Alex Martin",
+    "messageLabel": "Votre Commentaire",
+    "messagePlaceholder": "Écrivez votre commentaire ici...",
+    "send": "Envoyer le Commentaire",
+    "sending": "Envoi...",
+    "sentMessage": "Merci ! Votre commentaire a été soumis.",
+    "close": "Fermer"
+  },
+  "rating": {
+    "thanks": "Merci pour votre évaluation !"
+  },
+  "feedbackWall": {
+    "title": "Commentaires des Utilisateurs en Direct",
+    "subtitle": "Voyez ce que les gens disent en ce moment."
+  },
+  "onboarding": {
+    "next": "Suivant",
+    "back": "Retour",
+    "finish": "À vos claviers !",
+    "skip": "Passer",
+    "close": "Fermer le tutoriel",
+    "step1": {
+      "title": "Bienvenue !",
+      "content": "Faisons un petit tour rapide pour vous familiariser avec toutes les fonctionnalités du test de dactylographie."
+    },
+    "step2": {
+      "title": "Configurez Votre Test",
+      "content": "Avant de commencer, choisissez un mode, une limite de temps ou de mots, et une difficulté. Ensuite, appuyez sur le grand bouton pour commencer !"
+    },
+    "step3": {
+      "title": "L'Arène de Frappe",
+      "content": "Une fois qu'un test commence, tapez simplement le texte. Vos MPM et votre Précision en temps réel s'afficheront en haut."
+    },
+    "step4": {
+      "title": "Suivez Vos Progrès",
+      "content": "Après quelques tests, vos statistiques et un graphique de progression apparaîtront sur la page principale pour vous aider à voir votre amélioration."
+    },
+    "step5": {
+      "title": "Personnalisez & Apprenez",
+      "content": "Explorez les Leçons guidées et les articles de Blog, ou cliquez sur l'icône des paramètres (⚙️) pour changer les thèmes, les sons et la langue."
+    },
+    "step6": {
+      "title": "Vous Êtes Prêt !",
+      "content": "C'est tout ce que vous devez savoir. Mettez-vous au défi et amusez-vous bien !"
+    }
+  }
+}

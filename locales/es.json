@@ -1,0 +1,284 @@
+{
+  "header": {
+    "lessons": "Lecciones",
+    "tests": "Pruebas",
+    "blog": "Blog",
+    "settings": "Abrir configuración"
+  },
+  "main": {
+    "back": "Atrás",
+    "landingTitle": "Prueba de Velocidad de Escritura",
+    "landingSubtitle": "¿Qué tan rápido puedes escribir? ¡Averigüémoslo!"
+  },
+  "landing": {
+    "configureTitle": "Configura tu Prueba",
+    "startTyping": "Comenzar a Escribir",
+    "tooltipDifficulty": "Ajusta la complejidad del texto. Fácil usa palabras simples. Medio introduce palabras más largas y puntuación básica. Difícil presenta vocabulario y estructura complejos.",
+    "tooltipTimeLimit": "Establece la duración para el modo 'Tiempo'. Escribe todo lo que puedas antes de que se acabe el tiempo.",
+    "tooltipWordCount": "Establece la longitud para el modo 'Palabras'. La prueba termina después de escribir el número de palabras seleccionado.",
+    "tooltipMode": "Cambia el formato de la prueba. 'Tiempo' es una carrera contra el reloj. 'Palabras' es un número fijo de palabras. 'Cita' es escribir una cita famosa.",
+    "time": "Tiempo",
+    "words": "Palabras",
+    "quote": "Cita",
+    "difficulty": {
+      "easy": "Fácil",
+      "medium": "Medio",
+      "hard": "Difícil"
+    },
+    "detailedArticles": {
+      "title": "Artículos Detallados",
+      "subtitle": "Aprenda más sobre el arte de la mecanografía y las características de este sitio web."
+    }
+  },
+  "test": {
+    "reset": "Reiniciar",
+    "pause": "Pausa",
+    "resume": "Reanudar",
+    "pausedTitle": "En Pausa",
+    "pausedMessage": "Haz clic o presiona cualquier tecla para continuar",
+    "tooltipRestart": "Reiniciar la prueba actual (Esc)",
+    "tooltipPause": "Pausar la prueba",
+    "tooltipResume": "Reanudar la prueba",
+    "startTyping": "Comienza a escribir cualquier carácter para iniciar la prueba."
+  },
+  "results": {
+    "title": "¡Prueba Completada!",
+    "subtitle": "Aquí están tus resultados:",
+    "wpm": "PPM",
+    "accuracy": "Precisión",
+    "retry": "Reintentar",
+    "tryAgain": "Intentar de Nuevo",
+    "changeSettingsPrompt": "O presiona <1>Enter</1> para cambiar la configuración",
+    "quoteBy": "Cita de"
+  },
+  "history": {
+    "title": "Tu Progreso",
+    "noHistory": "Completa al menos dos pruebas para ver tu gráfico de progreso.",
+    "combined": "Combinado",
+    "wpm": "PPM",
+    "accuracy": "Precisión"
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "q1": "¿Cómo aumento mi velocidad de escritura?",
+    "a1": "La práctica constante es clave. Enfócate en la precisión antes que en la velocidad. Usa todos tus dedos y evita mirar el teclado. Las sesiones de práctica cortas y regulares son más efectivas que las largas e infrecuentes.",
+    "q2": "¿Qué tan rápido debería escribir?",
+    "a2": "La velocidad de escritura promedio es de alrededor de 40 PPM (Palabras Por Minuto). Una velocidad de 55 PPM o más se considera buena. Los mecanógrafos competitivos a menudo alcanzan velocidades de más de 100 PPM.",
+    "q3": "¿Cómo se mide la velocidad de escritura?",
+    "a3": "La velocidad de escritura se mide en Palabras Por Minuto (PPM). Una \"palabra\" se estandariza como cinco caracteres, incluyendo espacios y puntuación. La fórmula es (total de caracteres escritos / 5) / tiempo en minutos.",
+    "q4": "¿Por qué es importante hacer una prueba de velocidad de escritura?",
+    "a4": "Hacer una prueba de velocidad de escritura te ayuda a evaluar tus habilidades actuales, seguir tu mejora con el tiempo e identificar debilidades. Es una excelente manera de mantenerte motivado mientras practicas."
+  },
+  "footer": {
+    "builtWith": "copyright 2025 typing test",
+    "privacyPolicy": "Política de Privacidad",
+    "termsOfService": "Términos de Servicio",
+    "feedback": "Comentarios",
+    "help": "Ayuda"
+  },
+  "lessons": {
+    "title": "Lecciones de Escritura",
+    "subtitle": "Desarrolla tus habilidades desde cero con lecciones guiadas.",
+    "startLesson": "Comenzar Lección",
+    "searchPlaceholder": "Buscar lecciones...",
+    "noResults": "No se encontraron lecciones que coincidan con tu búsqueda.",
+    "homeRowFJTitle": "Fila Guía, Teclas F y J",
+    "homeRowFJDesc": "Aprende la base de la mecanografía al tacto dominando las teclas de la fila guía.",
+    "homeRowDKTitle": "Fila Guía, Teclas D y K",
+    "homeRowDKDesc": "Expande tu alcance en la fila guía con las teclas D y K.",
+    "homeRowSLTitle": "Fila Guía, Teclas S y L",
+    "homeRowSLDesc": "Sigue desarrollando tu memoria muscular con S y L.",
+    "homeRowA_Title": "Fila Guía, Teclas A y ;",
+    "homeRowA_Desc": "Completa la fila guía con las teclas A y punto y coma.",
+    "homeRowWords1Title": "Palabras de la Fila Guía",
+    "homeRowWords1Desc": "Practica formando palabras simples usando solo la fila guía.",
+    "topRowRUTitle": "Fila Superior, Teclas R y U",
+    "topRowRUDesc": "Alcanza la fila superior y aprende las teclas R y U.",
+    "topRowEITitle": "Fila Superior, Teclas E y I",
+    "topRowEIDesc": "Practica dos de las vocales más comunes, E e I.",
+    "bottomRowVMTitle": "Fila Inferior, Teclas V y M",
+    "bottomRowVMDesc": "Aprende a escribir V y M en la fila inferior sin mirar.",
+    "punctuationTitle": "Práctica de Puntuación",
+    "punctuationDesc": "Domina la puntuación esencial como puntos y comas.",
+    "topRowTYTitle": "Fila Superior, Teclas T e Y",
+    "topRowTYDesc": "Continúa tu práctica en la fila superior con T e Y.",
+    "topRowWOTitle": "Fila Superior, Teclas W y O",
+    "topRowWODesc": "Aprende las teclas W y O para ampliar tu vocabulario.",
+    "bottomRowCCommaTitle": "Fila Inferior, C y Coma",
+    "bottomRowCCommaDesc": "Practica la tecla C y refuerza tu habilidad con la coma.",
+    "shiftKeyLeftTitle": "Práctica de la Tecla Shift Izquierda",
+    "shiftKeyLeftDesc": "Aprende a poner mayúsculas usando la tecla Shift izquierda.",
+    "shiftKeyRightTitle": "Práctica de la Tecla Shift Derecha",
+    "shiftKeyRightDesc": "Domina las mayúsculas con la tecla Shift derecha.",
+    "numberRow10Title": "Fila de Números, 1 y 0",
+    "numberRow10Desc": "Una introducción a la escritura de números con 1 y 0.",
+    "commonWordsTitle": "Práctica de Palabras Comunes",
+    "commonWordsDesc": "Escribe algunas de las palabras más usadas en español.",
+    "topRowQPTitle": "Fila Superior, Teclas Q y P",
+    "topRowQPDesc": "Completa la fila superior con las teclas Q y P.",
+    "bottomRowXPeriodTitle": "Fila Inferior, X y Punto",
+    "bottomRowXPeriodDesc": "Practica la tecla X y el punto para terminar oraciones.",
+    "bottomRowZSlashTitle": "Fila Inferior, Teclas Z y /",
+    "bottomRowZSlashDesc": "Aprende las últimas letras de la fila inferior, Z y /.",
+    "numberRow29Title": "Fila de Números, 2 y 9",
+    "numberRow29Desc": "Amplía tus habilidades para escribir números con el 2 y el 9.",
+    "numberRow38Title": "Fila de Números, 3 y 8",
+    "numberRow38Desc": "Continúa practicando la fila de números con el 3 y el 8.",
+    "combinedRowFluencyTitle": "Fluidez entre Filas Combinadas",
+    "combinedRowFluencyDesc": "Practica escribiendo palabras que usan teclas de todas las filas.",
+    "capitalizationPracticeTitle": "Práctica de Mayúsculas",
+    "capitalizationPracticeDesc": "Mejora tu uso de la tecla Shift capitalizando oraciones.",
+    "commonSymbolsTitle": "Símbolos Comunes",
+    "commonSymbolsDesc": "Practica escribiendo símbolos comunes como ?, ! y comillas.",
+    "longWordPracticeTitle": "Práctica de Palabras Largas",
+    "longWordPracticeDesc": "Ponte a prueba escribiendo palabras más largas y complejas.",
+    "pangramPracticeTitle": "Práctica de Pangramas",
+    "pangramPracticeDesc": "Escribe oraciones que contengan cada letra del alfabeto."
+  },
+  "lesson": {
+    "accuracy": "Precisión",
+    "complete": "¡Lección Completada!",
+    "retry": "Reintentar Lección",
+    "backToLessons": "Volver a Lecciones",
+    "nextLesson": "Siguiente Lección",
+    "upNext": "A continuación:"
+  },
+  "stats": {
+    "avgSpeed": "Vel. Promedio",
+    "wpm": "PPM",
+    "avgAcc": "Prec. Promedio",
+    "typingTime": "Tiempo de Escritura",
+    "dailyGoal": "Meta Diaria"
+  },
+  "settings": {
+    "title": "Configuración",
+    "appearanceTitle": "Apariencia",
+    "theme": "Tema",
+    "specificThemes": "Temas Específicos",
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema"
+  },
+  "certificate": {
+    "generate": "Generar Certificado",
+    "title": "Certificado de Logro",
+    "certifyLine": "Se certifica que",
+    "achievedRankLine": "ha alcanzado el rango de",
+    "statsLine": "con una velocidad promedio de {{wpm}} PPM y {{accuracy}}% de precisión en {{tests}} pruebas.",
+    "rank": {
+      "dedicated": "Mecanógrafo Dedicado",
+      "proficient": "Mecanógrafo Competente",
+      "expert": "Mecanógrafo Experto",
+      "virtuoso": "Virtuoso de la Mecanografía"
+    },
+    "quotes": {
+      "beginner1": "\"El viaje de mil millas comienza con un solo paso.\"",
+      "beginner2": "\"El éxito es la suma de pequeños esfuerzos, repetidos día tras día.\"",
+      "intermediate1": "\"No importa lo lento que vayas, siempre y cuando no te detengas.\"",
+      "intermediate2": "\"La práctica no es lo que haces una vez que eres bueno. Es lo que haces lo que te hace bueno.\"",
+      "expert1": "\"Somos lo que hacemos repetidamente. La excelencia, entonces, no es un acto, sino un hábito.\"",
+      "expert2": "\"La velocidad es un subproducto de la precisión.\""
+    },
+    "namePrompt": "Introduce tu Nombre",
+    "namePlaceholder": "Ej. Alex García",
+    "print": "Imprimir",
+    "download": "Descargar",
+    "downloading": "Descargando...",
+    "close": "Cerrar",
+    "dateOfIssue": "Fecha de Emisión",
+    "signature": "Firma",
+    "signatureName": "TypingTest.App",
+    "testsCompleted": "Pruebas Completadas"
+  },
+  "blog": {
+    "title": "Nuestro Blog",
+    "subtitle": "Consejos, trucos e ideas para ayudarte a ser un mejor mecanógrafo.",
+    "readMore": "Leer Más",
+    "backToBlog": "Volver al Blog",
+    "post1": {
+      "title": "Entendiendo PPM y Precisión: Los Pilares Gemelos de la Habilidad de Mecanografía",
+      "summary": "Ve más allá de lo básico de PPM y Precisión. Aprende cómo se calculan estas métricas clave en cualquier prueba de mecanografía en línea, por qué una alta precisión en la prueba de mecanografía es tu arma secreta para la velocidad, y cómo interpretar tus resultados eficazmente.",
+      "content": "Cuando realizas cualquier prueba de mecanografía en línea, dos métricas siempre destacarán: Palabras Por Minuto (PPM) y Precisión. Es fácil dejarse llevar por la emoción de una puntuación alta de PPM, pero para convertirte en un mecanógrafo verdaderamente competente, debes entender la relación profunda y simbiótica entre estas dos cifras. Son los pilares gemelos que sostienen toda la escritura eficaz, ya sea que estés haciendo una prueba de mecanografía en inglés casual o una certificación profesional.\\n\\nPrimero, desmitifiquemos las PPM. Esta métrica mide tu velocidad bruta. En una prueba de mecanografía estandarizada, una 'palabra' se define como cinco pulsaciones de teclas, incluyendo letras, espacios y puntuación. Así que, si escribes 300 caracteres en un minuto, tus PPM brutos son 60. Esta aplicación calcula tus PPM en tiempo real, dándote retroalimentación instantánea sobre tu ritmo durante cualquier prueba de velocidad de escritura. Sin embargo, es crucial distinguir entre PPM Brutos (velocidad en bruto) y PPM Netos (velocidad después de contabilizar los errores). Mientras muchas aplicaciones se centran en la velocidad bruta, tu velocidad real y práctica es siempre la cifra neta, ya que los errores toman tiempo para corregirse en el mundo real. Un promedio de prueba de mecanografía bueno para la mayoría de los adultos es de alrededor de 40 PPM, pero con práctica en una prueba de mecanografía gratis como esta, alcanzar 60-70 PPM es una meta muy alcanzable.\\n\\nEsto nos lleva al segundo pilar, y posiblemente el más importante: la precisión en la prueba de mecanografía. La precisión es el porcentaje de caracteres que escribes correctamente. Puede parecer menos emocionante que la velocidad bruta, pero es la verdadera base de un mecanógrafo rápido. Imagina dos mecanógrafos: uno escribe a 80 PPM con un 90% de precisión, y el otro a 60 PPM con un 99% de precisión. El primer mecanógrafo comete 8 errores por minuto, cada uno requiriendo que se detenga, presione retroceso varias veces y vuelva a escribir. El segundo mecanógrafo comete menos de un error por minuto. En cualquier escenario práctico, el segundo mecanógrafo, más preciso, es mucho más eficiente. Es por eso que nuestra aplicación de prueba de mecanografía muestra prominentemente tu precisión. Tu objetivo inicial siempre debe ser mantener una precisión del 98% o superior. Solo cuando puedas hacerlo consistentemente deberías centrarte en aumentar tu velocidad.\\n\\nLa magia ocurre cuando te das cuenta de que la velocidad es un subproducto de la precisión. Cuando entrenas tus dedos para presionar las teclas correctas cada vez, construyes una memoria muscular limpia y eficiente. Eliminas los movimientos vacilantes y bruscos de corregir errores. Tus dedos comienzan a fluir por el teclado. A medida que continúes practicando en nuestra prueba de mecanografía gratis, centrándote en las pulsaciones perfectas, tu velocidad comenzará a aumentar de forma natural y sostenible. Usa esta prueba de mecanografía en línea para construir esa base sólida. Concéntrate primero en la precisión de tu prueba de mecanografía, y los resultados de la prueba de mecanografía rápida vendrán después."
+    },
+    "post2": {
+      "title": "Una Visita Guiada a la Sección de Lecciones",
+      "summary": "El camino hacia una puntuación de 100 PPM comienza aquí. Descubre cómo nuestras lecciones estructuradas te transforman de principiante a un experto listo para cualquier prueba de mecanografía en inglés avanzada, comenzando con los fundamentos y avanzando hacia desafíos complejos.",
+      "content": "Si te tomas en serio la mejora de tus habilidades, la sección de 'Lecciones' es tu campo de entrenamiento definitivo. Mientras que realizar una prueba de mecanografía aleatoria es genial para la evaluación comparativa, nuestras lecciones proporcionan un camino estructurado y metódico hacia la maestría. Están diseñadas para construir la memoria muscular fundamental necesaria para sobresalir en cualquier entorno de escritura, desde una simple prueba de mecanografía en inglés hasta una exigente prueba de mecanografía avanzada.\\n\\nEl viaje comienza desde el principio, con lo que podría considerarse una 'prueba de mecanografía abc' para tus dedos: la fila guía. Cada una de las lecciones iniciales introduce solo unas pocas teclas nuevas. Esta repetición deliberada y enfocada es el núcleo del aprendizaje efectivo. Entrena a tus dedos para que sepan dónde está cada tecla sin pensar conscientemente, que es la definición de mecanografía al tacto. Apresurarse en esta etapa es un error común; tómate tu tiempo para lograr una precisión casi perfecta en estas lecciones fundamentales antes de continuar. Piénsalo como aprender el abecedario antes de intentar escribir una novela.\\n\\nA medida que avanzas, las lecciones se vuelven más complejas. Pasarás de letras individuales a formar palabras, y luego a oraciones completas. Introducimos puntuación, mayúsculas con las teclas Shift y números. Esta sobrecarga progresiva asegura que siempre estés desafiado pero nunca abrumado. Estos ejercicios están diseñados específicamente para prepararte para la variedad que encontrarás en una prueba de mecanografía del mundo real. Incluso practicarás las habilidades necesarias para una 'prueba de mecanografía de la a a la z' (también conocida como prueba de pangramas), donde debes escribir oraciones que contengan todas las letras del alfabeto, asegurando que ninguna tecla quede sin tocar.\\n\\nNuestras lecciones son la preparación perfecta para una prueba de mecanografía en inglés avanzada. No solo te enseñan la disposición del teclado, sino que también te ejercitan en combinaciones de letras y patrones de palabras comunes en el idioma inglés. Para cuando completes todas las lecciones, tendrás la confianza y la memoria muscular para enfrentar cualquier desafío. No te preocupes por tus PPM durante las lecciones; el único enfoque debe ser la precisión y la forma correcta. Una vez que te gradúes de las lecciones, puedes volver a nuestra sección de prueba de velocidad de escritura para ver cuánto ha valido la pena tu arduo trabajo. Tus dedos conocerán el camino."
+    },
+    "post3": {
+      "title": "Personaliza Tu Experiencia: Un Vistazo a la Configuración",
+      "summary": "Aprende a adaptar cada sesión de práctica a tus objetivos específicos. Descubre cómo usar diferentes modos y configuraciones para simular desafíos como una prueba de mecanografía de chat en vivo o una prueba de mecanografía todo en minúsculas, convirtiendo esta aplicación de prueba de mecanografía gratis en tu entrenador personal de mecanografía.",
+      "content": "Un entorno de práctica personalizado es una herramienta poderosa para mejorar. Un enfoque genérico y único para una prueba de mecanografía puede llevar al estancamiento. Es por eso que esta aplicación de prueba de mecanografía gratis te da un amplio control sobre tus sesiones de práctica, permitiéndote apuntar a tus debilidades y simular desafíos del mundo real con precisión.\\n\\nTu primer nivel de personalización es el selector de 'Modo de Juego' en la página principal. Esto es más que una simple preferencia; es una elección estratégica. El modo 'Tiempo' es la clásica prueba de velocidad de escritura, perfecta para desarrollar resistencia y rendir bajo presión. El modo 'Palabras' es ideal para sprints cortos y enfocados para impulsar tu velocidad máxima. El modo 'Cita' cambia el enfoque en gran medida hacia la precisión, penalizando cualquier desviación del texto original. Un mecanógrafo experto utiliza los tres modos para desarrollar un conjunto de habilidades bien redondeado.\\n\\nMás allá del modo, puedes ajustar el contenido. La configuración de dificultad (Fácil, Medio, Difícil) cambia la complejidad del vocabulario y la estructura de las oraciones, lo que te permite escalar el desafío a medida que mejoras. Esto es esencial para cualquiera que se prepare para una prueba de mecanografía avanzada. Pero también puedes simular escenarios específicos. Por ejemplo, ¿alguna vez has considerado practicar para una 'prueba de mecanografía de chat en vivo'? En el servicio al cliente o en la comunicación rápida en equipo, escribes en ráfagas cortas y rápidas. Puedes simular esto eligiendo el modo 'Palabras' con un recuento bajo de palabras (como 10 o 25). Esto entrena un tipo de velocidad diferente al de una prueba de maratón de 5 minutos.\\n\\n¿Y qué hay de los desafíos técnicos específicos? Algunas pruebas de codificación o tareas de entrada de datos pueden no requerir mayúsculas. Puedes practicar esto ignorando conscientemente la tecla Shift para simular una 'prueba de mecanografía todo en minúsculas', centrándote puramente en la velocidad de tus teclas de letras. El panel de configuración, accesible desde el encabezado, permite una mayor personalización. Puedes elegir entre varios temas visuales para encontrar uno que sea agradable a la vista, y puedes ajustar la retroalimentación de audio a tu gusto. Al combinar todas estas opciones, puedes transformar esta plataforma de una simple prueba de mecanografía rápida en una sofisticada herramienta de entrenamiento, perfectamente adaptada para ayudarte a alcanzar tus metas."
+    },
+    "post4": {
+      "title": "Analizando Tu Progreso: Entendiendo el Gráfico de Historial",
+      "summary": "Tus datos cuentan la historia de tu viaje de mecanografía. Aprende a usar las estadísticas y el gráfico de historial en nuestra aplicación de prueba de mecanografía para seguir tu promedio de prueba de mecanografía, diagnosticar problemas, superar estancamientos y convertirte en un mecanógrafo más consistente.",
+      "content": "El viejo adagio, 'Lo que se mide, se gestiona', es especialmente cierto cuando se aprende una nueva habilidad. Cada prueba de mecanografía en línea que completas proporciona datos valiosos. Nuestra aplicación de prueba de mecanografía guarda y visualiza automáticamente estos datos, convirtiéndolos en tu informe de progreso personal. Aprender a leer este informe es clave para una práctica inteligente y eficiente.\\n\\nTu viaje comienza con las estadísticas de alto nivel que se muestran directamente en la página de inicio. Aquí encontrarás tu 'promedio de prueba de mecanografía' general tanto para PPM como para precisión. Esto te da una instantánea rápida de tu nivel de habilidad actual. ¿Eres un mecanógrafo de 40 PPM o de 60 PPM en promedio? ¿Está tu 'precisión de prueba de mecanografía' promedio por encima del 98% recomendado? Este panel también rastrea tu tiempo total dedicado a escribir, un testimonio de tu dedicación, e incluye un seguimiento de metas diarias para ayudarte a construir un hábito de práctica constante.\\n\\nPara un análisis más profundo, mira el Gráfico de Historial. Este gráfico visualiza los resultados de tus últimas 10 pruebas, contando una historia de tu rendimiento reciente. ¿Puedes ver una tendencia ascendente constante en PPM? ¡Eso es genial! Pero mira más de cerca. A medida que tu línea de PPM sube, ¿qué está haciendo tu línea de precisión? Si está bajando, es una clara señal de que estás buscando velocidad a expensas de la precisión, un error común. Esta es tu señal para reducir la velocidad durante algunas sesiones y volver a centrarte en los fundamentos. Por el contrario, si tanto tu velocidad como tu precisión se estancan, es posible que hayas llegado a una meseta. Este es el momento de cambiar tu rutina, quizás aumentando la dificultad o probando un modo de prueba diferente.\\n\\nEste enfoque basado en datos es lo que separa la práctica casual del entrenamiento deliberado. El gráfico te ayuda a diagnosticar tus propias debilidades. ¿Son tus resultados inconsistentes? Esto podría indicar problemas de concentración o fatiga. ¿Es tu precisión consistentemente baja? Es hora de volver a la sección de Lecciones. Al revisar regularmente tu rendimiento en nuestra aplicación de prueba de mecanografía, puedes dejar de practicar a ciegas y comenzar a entrenar de manera inteligente. Deja que los datos sean tu guía en el camino para convertirte en un mecanógrafo más rápido y preciso."
+    },
+    "post5": {
+      "title": "Ergonomía para Mecanógrafos: Configura tu Espacio de Trabajo para el Éxito",
+      "summary": "Aprende a optimizar la configuración de tu escritorio, silla y postura para escribir más rápido, por más tiempo y sin dolor.",
+      "content": "Tu configuración física juega un papel muy importante en tu capacidad para escribir. Una mala ergonomía puede provocar molestias, fatiga e incluso lesiones por esfuerzo repetitivo (LER), todo lo cual dificultará tu progreso. Unos pequeños ajustes pueden marcar una gran diferencia.\\n\\nPrimero, tu silla y postura. Siéntate derecho con los pies planos en el suelo. Tus codos deben estar en un ángulo de aproximadamente 90 grados, con las muñecas rectas y no dobladas hacia arriba o hacia abajo. Ajusta la altura de tu silla para lograr esto. Tu monitor debe estar posicionado de manera que la parte superior de la pantalla esté a la altura de los ojos o ligeramente por debajo, para evitar la tensión en el cuello.\\n\\nLuego, tu teclado y ratón. Coloca el teclado directamente frente a ti, centrado con tu cuerpo. Cuando coloques los dedos en la fila guía, tus brazos deben estar relajados. Evita estirarte. Si usas un reposamuñecas, asegúrate de que soporte la palma de tu mano, no la muñeca en sí, para mantener una alineación adecuada.\\n\\nFinalmente, ¡recuerda tomar descansos! La regla 20-20-20 es una excelente guía: cada 20 minutos, mira algo a 20 pies (unos 6 metros) de distancia durante 20 segundos. Levántate, estírate y dale un descanso a tus manos y ojos. Un mecanógrafo cómodo es un mecanógrafo más rápido y consistente."
+    },
+    "post6": {
+      "title": "Más Allá de lo Básico: Estrategias de Práctica Efectivas",
+      "summary": "¿Atascado en una meseta de mecanografía? Descubre técnicas de práctica avanzadas como ejercicios específicos, práctica deliberada y cómo usar las funciones de esta aplicación para superar barreras.",
+      "content": "Has dominado la fila guía y tus PPM están aumentando, pero de repente tu progreso se detiene. Esto es una meseta de mecanografía, y es completamente normal. Para superarla, necesitas pasar de la simple repetición a la práctica deliberada.\\n\\nLa práctica deliberada significa identificar tus debilidades específicas y enfocarte en ellas. ¿Tu precisión disminuye en palabras con 'q' o 'z'? ¿Te cuesta poner mayúsculas con el dedo meñique? Usa la sección de 'Lecciones' para practicar estas teclas o habilidades específicas. Escribir repetidamente 'El veloz murciélago hindú comía feliz cardillo y kiwi' es genial para la práctica general, pero los ejercicios específicos corregirán tus errores recurrentes.\\n\\nOtra estrategia clave es esforzarte un poco más allá de tu zona de confort. Si tu velocidad promedio es de 50 PPM, no te limites a apuntar a 50 PPM en la práctica. Intenta llegar a 55 PPM, incluso si tu precisión disminuye ligeramente. Esto obliga a tus dedos a moverse más rápido y a crear nueva memoria muscular. Después de algunas de estas sesiones de 'sprint', vuelve a 50 PPM y concéntrate en recuperar tu precisión al 98% o más. Este ciclo de esforzarse por la velocidad y luego consolidar con la precisión es una de las formas más rápidas de mejorar.\\n\\nPor último, la consistencia es más importante que la intensidad. Practicar durante 15 minutos todos los días es mucho más efectivo que una sesión de dos horas una vez a la semana. Usa el rastreador de 'Meta Diaria' en la página de inicio para ayudarte a crear este hábito."
+    },
+    "post7": {
+      "title": "Desbloquea la Velocidad con Atajos de Teclado",
+      "summary": "Escribir no se trata solo de redactar prosa. Aumenta tu productividad general dominando los atajos de teclado esenciales para navegar por el texto y administrar aplicaciones.",
+      "content": "Unas excelentes habilidades de mecanografía te ahorran tiempo al escribir, pero ¿qué pasa con todas las demás cosas que haces en una computadora? Dominar los atajos de teclado es el siguiente nivel de eficiencia. Reducir tu dependencia del ratón para tareas comunes puede acelerar drásticamente tu flujo de trabajo.\\n\\nComencemos con lo esencial. Todo el mundo conoce Ctrl/Cmd + C (copiar) y Ctrl/Cmd + V (pegar), pero no olvides a sus hermanos: Ctrl/Cmd + X (cortar) para mover texto, Ctrl/Cmd + Z (deshacer) para revertir un error, y Ctrl/Cmd + S para guardar tu trabajo con frecuencia.\\n\\nLa navegación por el texto es otro gran ahorro de tiempo. En lugar de hacer clic con el ratón, usa Ctrl/Cmd + Teclas de Flecha para saltar entre palabras. Mantener presionada la tecla Shift mientras haces esto seleccionará el texto a medida que saltas (por ejemplo, Shift + Ctrl + Flecha Derecha selecciona la siguiente palabra). Las teclas Inicio y Fin te llevarán al principio o al final de una línea, y agregar Ctrl/Cmd te llevará al inicio o al final de todo el documento.\\n\\nNo te detengas ahí. Aprende los atajos para tus aplicaciones más utilizadas. Alt + Tab (o Cmd + Tab en Mac) para cambiar entre ventanas abiertas es imprescindible. Ctrl + T para abrir una nueva pestaña del navegador y Ctrl + W para cerrar una cambiarán tu forma de navegar por la web. Cada segundo que ahorras al mantener las manos en el teclado se suma, convirtiéndote en un usuario de computadora más eficiente y poderoso."
+    }
+  },
+  "feedback": {
+    "title": "Enviar Comentarios",
+    "description": "¿Tienes una sugerencia o encontraste un error? Nos encantaría saber de ti. Tus comentarios nos ayudan a mejorar.",
+    "nameLabel": "Tu Nombre",
+    "namePlaceholder": "Ej., Alex García",
+    "messageLabel": "Tus Comentarios",
+    "messagePlaceholder": "Escribe tus comentarios aquí...",
+    "send": "Enviar Comentarios",
+    "sending": "Enviando...",
+    "sentMessage": "¡Gracias! Tus comentarios han sido enviados.",
+    "close": "Cerrar"
+  },
+  "rating": {
+    "thanks": "¡Gracias por tus comentarios!"
+  },
+  "feedbackWall": {
+    "title": "Comentarios de Usuarios en Vivo",
+    "subtitle": "Mira lo que la gente está diciendo en este momento."
+  },
+  "onboarding": {
+    "next": "Siguiente",
+    "back": "Atrás",
+    "finish": "¡A Escribir!",
+    "skip": "Omitir",
+    "close": "Cerrar Tutorial",
+    "step1": {
+      "title": "¡Bienvenido!",
+      "content": "Hagamos un recorrido rápido para que te familiarices con todas las funciones de la prueba de escritura."
+    },
+    "step2": {
+      "title": "Configura Tu Prueba",
+      "content": "Antes de empezar, elige un modo, un límite de tiempo o de palabras y la dificultad. ¡Luego pulsa el botón grande para empezar!"
+    },
+    "step3": {
+      "title": "La Arena de Escritura",
+      "content": "Una vez que comience una prueba, simplemente empieza a escribir el texto. Tus PPM y Precisión en tiempo real se mostrarán en la parte superior."
+    },
+    "step4": {
+      "title": "Sigue Tu Progreso",
+      "content": "Después de unas cuantas pruebas, tus estadísticas y un gráfico de progreso aparecerán en la página principal para ayudarte a ver tu mejora."
+    },
+    "step5": {
+      "title": "Personaliza y Aprende",
+      "content": "Explora Lecciones guiadas y publicaciones de Blog, o haz clic en el icono de configuración (⚙️) para cambiar temas, sonidos e idioma."
+    },
+    "step6": {
+      "title": "¡Todo Listo!",
+      "content": "Eso es todo lo que necesitas saber. ¡Ponte a prueba y diviértete!"
+    }
+  }
+}

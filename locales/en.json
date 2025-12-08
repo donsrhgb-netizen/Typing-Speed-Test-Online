@@ -1,0 +1,284 @@
+{
+  "header": {
+    "lessons": "Lessons",
+    "tests": "Tests",
+    "blog": "Blog",
+    "settings": "Open settings"
+  },
+  "main": {
+    "back": "Back",
+    "landingTitle": "Typing Speed Test",
+    "landingSubtitle": "How fast can you type? Let's find out!"
+  },
+  "landing": {
+    "configureTitle": "Configure Your Test",
+    "startTyping": "Start Typing",
+    "tooltipDifficulty": "Adjusts text complexity. Easy uses simple words. Medium introduces longer words and basic punctuation. Hard features complex vocabulary and structure.",
+    "tooltipTimeLimit": "Sets the duration for 'Time' mode. Type as much as you can before the clock runs out.",
+    "tooltipWordCount": "Sets the length for 'Words' mode. The test ends after you type the selected number of words.",
+    "tooltipMode": "Change the test format. 'Time' is a race against the clock. 'Words' is a set number of words. 'Quote' is typing a famous quote.",
+    "time": "Time",
+    "words": "Words",
+    "quote": "Quote",
+    "difficulty": {
+      "easy": "Easy",
+      "medium": "Medium",
+      "hard": "Hard"
+    },
+    "detailedArticles": {
+      "title": "Detailed Articles",
+      "subtitle": "Learn more about the art of typing and the features of this website."
+    }
+  },
+  "test": {
+    "reset": "Reset",
+    "pause": "Pause",
+    "resume": "Resume",
+    "pausedTitle": "Paused",
+    "pausedMessage": "Click or press any key to resume",
+    "tooltipRestart": "Restart the current test (Esc)",
+    "tooltipPause": "Pause the test",
+    "tooltipResume": "Resume the test",
+    "startTyping": "Start typing any character to begin the test."
+  },
+  "results": {
+    "title": "Test Complete!",
+    "subtitle": "Here are your results:",
+    "wpm": "WPM",
+    "accuracy": "Accuracy",
+    "retry": "Retry",
+    "tryAgain": "Try Again",
+    "changeSettingsPrompt": "Or press <1>Enter</1> to change settings",
+    "quoteBy": "Quote by"
+  },
+  "history": {
+    "title": "Your Progress",
+    "noHistory": "Complete at least two tests to see your progress chart.",
+    "combined": "Combined",
+    "wpm": "WPM",
+    "accuracy": "Accuracy"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": "How do I increase my typing speed?",
+    "a1": "Consistent practice is key. Focus on accuracy before speed. Use all of your fingers and avoid looking at the keyboard. Regular, short practice sessions are more effective than long, infrequent ones.",
+    "q2": "How fast should I be able to type?",
+    "a2": "The average typing speed is around 40 WPM (Words Per Minute). A speed of 55 WPM or higher is considered good. Competitive typists often reach speeds of over 100 WPM.",
+    "q3": "How is typing speed measured?",
+    "a3": "Typing speed is measured in Words Per Minute (WPM). A \"word\" is standardized as five characters, including spaces and punctuation. The formula is (total characters typed / 5) / time in minutes.",
+    "q4": "Why is taking a typing speed test important?",
+    "a4": "Taking a typing speed test helps you benchmark your current skills, track your improvement over time, and identify weaknesses. It's a great way to stay motivated while you practice."
+  },
+  "footer": {
+    "builtWith": "copyright 2025 typing test",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "feedback": "Feedback",
+    "help": "Help"
+  },
+  "lessons": {
+    "title": "Typing Lessons",
+    "subtitle": "Build your skills from the ground up with guided lessons.",
+    "startLesson": "Start Lesson",
+    "searchPlaceholder": "Search lessons...",
+    "noResults": "No lessons found matching your search.",
+    "homeRowFJTitle": "Home Row, F and J Keys",
+    "homeRowFJDesc": "Learn the foundation of touch typing by mastering the home row keys.",
+    "homeRowDKTitle": "Home Row, D and K Keys",
+    "homeRowDKDesc": "Expand your reach on the home row with the D and K keys.",
+    "homeRowSLTitle": "Home Row, S and L Keys",
+    "homeRowSLDesc": "Continue building your muscle memory with S and L.",
+    "homeRowA_Title": "Home Row, A and ; Keys",
+    "homeRowA_Desc": "Complete the home row with the A and semicolon keys.",
+    "homeRowWords1Title": "Home Row Words",
+    "homeRowWords1Desc": "Practice forming simple words using only the home row.",
+    "topRowRUTitle": "Top Row, R and U Keys",
+    "topRowRUDesc": "Reach up to the top row and learn the R and U keys.",
+    "topRowEITitle": "Top Row, E and I Keys",
+    "topRowEIDesc": "Practice two of the most common vowels, E and I.",
+    "bottomRowVMTitle": "Bottom Row, V and M Keys",
+    "bottomRowVMDesc": "Learn to type V and M on the bottom row without looking.",
+    "punctuationTitle": "Punctuation Practice",
+    "punctuationDesc": "Master essential punctuation like periods and commas.",
+    "topRowTYTitle": "Top Row, T and Y Keys",
+    "topRowTYDesc": "Continue your practice on the top row with T and Y.",
+    "topRowWOTitle": "Top Row, W and O Keys",
+    "topRowWODesc": "Learn the W and O keys to expand your vocabulary.",
+    "bottomRowCCommaTitle": "Bottom Row, C and Comma",
+    "bottomRowCCommaDesc": "Practice the C key and reinforce your comma skills.",
+    "shiftKeyLeftTitle": "Left Shift Key Practice",
+    "shiftKeyLeftDesc": "Learn to capitalize letters using the left Shift key.",
+    "shiftKeyRightTitle": "Right Shift Key Practice",
+    "shiftKeyRightDesc": "Master capitalization with the right Shift key.",
+    "numberRow10Title": "Number Row, 1 and 0",
+    "numberRow10Desc": "An introduction to typing numbers with 1 and 0.",
+    "commonWordsTitle": "Common Words Practice",
+    "commonWordsDesc": "Type some of the most frequently used words in English.",
+    "topRowQPTitle": "Top Row, Q and P Keys",
+    "topRowQPDesc": "Complete the top row with the Q and P keys.",
+    "bottomRowXPeriodTitle": "Bottom Row, X and Period",
+    "bottomRowXPeriodDesc": "Practice the X key and the period for ending sentences.",
+    "bottomRowZSlashTitle": "Bottom Row, Z and / Keys",
+    "bottomRowZSlashDesc": "Learn the final letters on the bottom row, Z and /.",
+    "numberRow29Title": "Number Row, 2 and 9",
+    "numberRow29Desc": "Expand your number typing skills with 2 and 9.",
+    "numberRow38Title": "Number Row, 3 and 8",
+    "numberRow38Desc": "Continue practicing the number row with 3 and 8.",
+    "combinedRowFluencyTitle": "Combined Row Fluency",
+    "combinedRowFluencyDesc": "Practice typing words that use keys from all rows.",
+    "capitalizationPracticeTitle": "Capitalization Practice",
+    "capitalizationPracticeDesc": "Improve your use of the shift key by capitalizing sentences.",
+    "commonSymbolsTitle": "Common Symbols",
+    "commonSymbolsDesc": "Practice typing common symbols like ?, !, and quotes.",
+    "longWordPracticeTitle": "Long Word Practice",
+    "longWordPracticeDesc": "Challenge yourself by typing longer, more complex words.",
+    "pangramPracticeTitle": "Pangram Practice",
+    "pangramPracticeDesc": "Type sentences that contain every letter of the alphabet."
+  },
+  "lesson": {
+    "accuracy": "Accuracy",
+    "complete": "Lesson Complete!",
+    "retry": "Retry Lesson",
+    "backToLessons": "Back to Lessons",
+    "nextLesson": "Next Lesson",
+    "upNext": "Up Next:"
+  },
+  "stats": {
+    "avgSpeed": "Avg. Speed",
+    "wpm": "WPM",
+    "avgAcc": "Avg. Accuracy",
+    "typingTime": "Typing Time",
+    "dailyGoal": "Daily Goal"
+  },
+  "settings": {
+    "title": "Settings",
+    "appearanceTitle": "Appearance",
+    "theme": "Theme",
+    "specificThemes": "Specific Themes",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "certificate": {
+    "generate": "Generate Certificate",
+    "title": "Certificate of Achievement",
+    "certifyLine": "This is to certify that",
+    "achievedRankLine": "has achieved the rank of",
+    "statsLine": "with an average speed of {{wpm}} WPM and {{accuracy}}% accuracy over {{tests}} tests.",
+    "rank": {
+      "dedicated": "Dedicated Typist",
+      "proficient": "Proficient Typist",
+      "expert": "Expert Typist",
+      "virtuoso": "Typing Virtuoso"
+    },
+    "quotes": {
+      "beginner1": "\"The journey of a thousand miles begins with a single step.\"",
+      "beginner2": "\"Success is the sum of small efforts, repeated day in and day out.\"",
+      "intermediate1": "\"It does not matter how slowly you go as long as you do not stop.\"",
+      "intermediate2": "\"Practice isn't the thing you do once you're good. It's the thing you do that makes you good.\"",
+      "expert1": "\"We are what we repeatedly do. Excellence, then, is not an act, but a habit.\"",
+      "expert2": "\"Speed is a byproduct of accuracy.\""
+    },
+    "namePrompt": "Enter Your Name",
+    "namePlaceholder": "e.g. Alex Doe",
+    "print": "Print",
+    "download": "Download",
+    "downloading": "Downloading...",
+    "close": "Close",
+    "dateOfIssue": "Date of Issue",
+    "signature": "Signature",
+    "signatureName": "TypingTest.App",
+    "testsCompleted": "Tests Completed"
+  },
+  "blog": {
+    "title": "Our Blog",
+    "subtitle": "Tips, tricks, and insights to help you become a better typist.",
+    "readMore": "Read More",
+    "backToBlog": "Back to Blog",
+    "post1": {
+      "title": "Understanding WPM & Accuracy: The Twin Pillars of Typing Skill",
+      "summary": "Go beyond the basics of WPM and Accuracy. Learn how these core metrics are calculated in any online typing test, why a high typing test accuracy is your secret weapon for speed, and how to interpret your results effectively.",
+      "content": "When you take any online typing test, two metrics will always stand out: Words Per Minute (WPM) and Accuracy. It's easy to get caught up in the thrill of a high WPM score, but to become a truly proficient typist, you must understand the deep and symbiotic relationship between these two figures. They are the twin pillars that support all effective typing, whether you're taking a casual english typing test or a professional certification.\\n\\nFirst, let's demystify WPM. This metric measures your raw speed. In a standardized typing test, a 'word' is defined as five keystrokes, including letters, spaces, and punctuation. So, if you type 300 characters in one minute, your gross WPM is 60. This app calculates your WPM in real-time, giving you instant feedback on your pace during any speed typing test. However, it's crucial to distinguish between Gross WPM (raw speed) and Net WPM (speed after accounting for errors). While many apps focus on gross speed, your true, practical speed is always the net figure, as errors take time to fix in the real world. A good typing test average for most adults is around 40 WPM, but with practice on a free typing test like this one, reaching 60-70 WPM is a very achievable goal.\\n\\nThis brings us to the second, and arguably more important, pillar: typing test accuracy. Accuracy is the percentage of characters you type correctly. It may seem less exciting than raw speed, but it is the true foundation of a fast typist. Imagine two typists: one types at 80 WPM with 90% accuracy, and the other types at 60 WPM with 99% accuracy. The first typist makes 8 errors per minute, each requiring them to stop, press backspace multiple times, and re-type. The second typist makes less than one error per minute. In any practical scenario, the second, more accurate typist is far more efficient. This is why our typing test app prominently displays your accuracy. Your initial goal should always be to maintain an accuracy of 98% or higher. Only once you can do that consistently should you focus on pushing your speed.\\n\\nThe magic happens when you realize that speed is a byproduct of accuracy. When you train your fingers to hit the right keys every time, you build clean, efficient muscle memory. You eliminate the hesitant, jerky movements of correcting errors. Your fingers begin to flow across the keyboard. As you continue to practice on our free typing test, focusing on perfect keystrokes, your speed will begin to increase naturally and sustainably. Use this online typing test to build that solid foundation. Focus on your typing test accuracy first, and the fast typing test results will follow."
+    },
+    "post2": {
+      "title": "A Guided Tour of the Lessons Section",
+      "summary": "The path to a 100 WPM score begins here. Discover how our structured lessons transform you from a beginner into an expert ready for any advance english typing test, starting with the fundamentals and building up to complex challenges.",
+      "content": "If you're serious about improving your skills, the 'Lessons' section is your ultimate training ground. While taking a random typing test is great for benchmarking, our lessons provide a structured, methodical path to mastery. They are designed to build the foundational muscle memory required to excel in any typing environment, from a simple english typing test to a demanding advance typing test.\\n\\nThe journey starts at the very beginning, with what could be considered an 'abc typing test' for your fingers: the home row. Each of the initial lessons introduces only a few new keys. This deliberate, focused repetition is the core of effective learning. It trains your fingers to know where each key is without conscious thought, which is the definition of touch typing. Rushing through this stage is a common mistake; take your time to achieve near-perfect accuracy on these foundational lessons before moving on. Think of it as learning the alphabet before you try to write a novel.\\n\\nAs you progress, the lessons become more complex. You'll move from individual letters to forming words, then to complete sentences. We introduce punctuation, capitalization with the shift keys, and numbers. This progressive overload ensures you're always challenged but never overwhelmed. These exercises are specifically designed to prepare you for the variety you'll encounter in a real-world typing test. You'll even practice skills needed for an 'a to z typing test' (also known as a pangram test), where you must type sentences containing every letter of the alphabet, ensuring no key is left untouched.\\n\\nOur lessons are the perfect preparation for an advance english typing test. They not only teach you the keyboard layout but also drill you on common letter combinations and word patterns in the English language. By the time you complete all the lessons, you will have the confidence and the muscle memory to tackle any challenge. Don't be concerned with your WPM during the lessons; the singular focus should be on accuracy and proper form. Once you graduate from the lessons, you can return to our speed typing test section to see just how much your hard work has paid off. Your fingers will know the way."
+    },
+    "post3": {
+      "title": "Customize Your Experience: A Look at the Settings",
+      "summary": "Learn to tailor every practice session to your specific goals. Discover how to use different modes and settings to simulate challenges like a live chat typing test or a typing test all lowercase, making this free typing test app your personal typing coach.",
+      "content": "A personalized practice environment is a powerful tool for improvement. A generic, one-size-fits-all approach to a typing test can lead to stagnation. That's why this free typing test app gives you extensive control over your practice sessions, allowing you to target weaknesses and simulate real-world challenges with precision.\\n\\nYour first level of customization is the 'Game Mode' selector on the main page. This is more than just a preference; it's a strategic choice. 'Time' mode is the classic speed typing test, perfect for building stamina and performing under pressure. 'Words' mode is ideal for short, focused sprints to push your peak speed. 'Quote' mode shifts the focus heavily towards accuracy, penalizing any deviation from the source text. An expert typist uses all three modes to develop a well-rounded skill set.\\n\\nBeyond the mode, you can adjust the content. The difficulty setting (Easy, Medium, Hard) changes the complexity of the vocabulary and sentence structure, allowing you to scale the challenge as you improve. This is essential for anyone preparing for an advance typing test. But you can also simulate specific scenarios. For instance, have you ever considered practicing for a 'live chat typing test'? In customer service or fast-paced team communication, you type in short, rapid bursts. You can simulate this by choosing the 'Words' mode with a low word count (like 10 or 25). This trains a different kind of speed than a 5-minute marathon test.\\n\\nWhat about specific technical challenges? Some coding tests or data entry tasks might not require capitalization. You can practice this by consciously ignoring the shift key to simulate a 'typing test all lowercase,' focusing purely on the speed of your letter keys. The settings panel, accessible from the header, allows for further personalization. You can choose from various visual themes to find one that's easy on your eyes, and you can fine-tune the audio feedback to your liking. By combining all these options, you can transform this platform from a simple fast typing test into a sophisticated training tool, perfectly tailored to help you reach your goals."
+    },
+    "post4": {
+      "title": "Analyzing Your Progress: Understanding the History Chart",
+      "summary": "Your data tells a story of your typing journey. Learn how to use the stats and history chart in our typing test app to track your typing test average, diagnose issues, break through plateaus, and become a more consistent typist.",
+      "content": "The old adage, 'What gets measured, gets managed,' is especially true when learning a new skill. Every online typing test you complete provides valuable data. Our typing test app automatically saves and visualizes this data, turning it into your personal progress report. Learning to read this report is key to smart, efficient practice.\\n\\nYour journey begins with the high-level statistics displayed right on the home page. Here you'll find your overall 'typing test average' for both WPM and Accuracy. This gives you a quick snapshot of your current skill level. Are you a 40 WPM typist or a 60 WPM typist on average? Is your average 'typing test accuracy' above the recommended 98%? This dashboard also tracks your total time spent typing, a testament to your dedication, and includes a daily goal tracker to help you build a consistent practice habit.\\n\\nFor a deeper analysis, look to the History Chart. This graph visualizes the results of your last 10 tests, telling a story of your recent performance. Can you see a steady upward trend in WPM? That's great! But look closer. As your WPM line goes up, what is your accuracy line doing? If it's dropping, it's a clear sign that you are pushing for speed at the expense of precision—a common mistake. This is your cue to slow down for a few sessions and refocus on fundamentals. Conversely, if both your speed and accuracy are flatlining, you may have hit a plateau. This is the time to change your routine, perhaps by increasing the difficulty or trying a different test mode.\\n\\nThis data-driven approach is what separates casual practice from deliberate training. The chart helps you diagnose your own weaknesses. Are your results inconsistent? This might point to issues with focus or fatigue. Is your accuracy consistently low? It's time to revisit the Lessons section. By regularly reviewing your performance in our typing test app, you can stop practicing blindly and start training intelligently. Let the data be your guide on the path to becoming a faster, more accurate typist."
+    },
+    "post5": {
+      "title": "Ergonomics for Typists: Set Up Your Workspace for Success",
+      "summary": "Learn how to optimize your desk setup, chair, and posture to type faster, longer, and without pain.",
+      "content": "Your physical setup plays a huge role in your typing ability. Poor ergonomics can lead to discomfort, fatigue, and even repetitive strain injuries (RSI), all of which will hinder your progress. A few small adjustments can make a world of difference.\\n\\nFirst, your chair and posture. Sit up straight with your feet flat on the floor. Your elbows should be at a roughly 90-degree angle, with your wrists straight and not bent upwards or downwards. Adjust your chair height to achieve this. Your monitor should be positioned so that the top of the screen is at or slightly below eye level, preventing neck strain.\\n\\nNext, your keyboard and mouse. Place your keyboard directly in front of you, centered with your body. When you place your fingers on the home row, your arms should be relaxed. Avoid reaching or stretching. If you use a wrist rest, make sure it supports the palm of your hand, not your wrist itself, to maintain proper alignment.\\n\\nFinally, remember to take breaks! The 20-20-20 rule is a great guideline: every 20 minutes, look at something 20 feet away for 20 seconds. Get up, stretch, and give your hands and eyes a rest. A comfortable typist is a faster and more consistent typist."
+    },
+    "post6": {
+      "title": "Beyond the Basics: Effective Practice Strategies",
+      "summary": "Stuck at a typing plateau? Discover advanced practice techniques like targeted drills, deliberate practice, and how to use this app's features to break through barriers.",
+      "content": "So you've mastered the home row and your WPM is climbing, but suddenly your progress stalls. This is a typing plateau, and it's completely normal. To break through, you need to shift from simple repetition to deliberate practice.\\n\\nDeliberate practice means identifying your specific weaknesses and targeting them. Does your accuracy drop on words with 'q' or 'z'? Do you struggle with capitalizing letters using your pinky finger? Use the 'Lessons' section to drill these specific keys or skills. Repeatedly typing 'The quick brown fox jumps over the lazy dog' is great for general practice, but targeted drills will fix your recurring errors.\\n\\nAnother key strategy is to push just beyond your comfort zone. If your average speed is 50 WPM, don't just aim for 50 WPM in practice. Try to push for 55 WPM, even if your accuracy drops slightly. This forces your fingers to move faster and build new muscle memory. After a few of these 'sprint' sessions, drop back down to 50 WPM and focus on getting your accuracy back to 98% or higher. This cycle of pushing for speed and then consolidating with accuracy is one of the fastest ways to improve.\\n\\nLastly, consistency is more important than intensity. Practicing for 15 minutes every day is far more effective than a two-hour session once a week. Use the 'Daily Goal' tracker on the home page to help build this habit."
+    },
+    "post7": {
+      "title": "Unlock Speed with Keyboard Shortcuts",
+      "summary": "Typing isn't just about writing prose. Boost your overall productivity by mastering essential keyboard shortcuts for navigating text and managing applications.",
+      "content": "Great typing skills save you time when writing, but what about all the other things you do on a computer? Mastering keyboard shortcuts is the next level of efficiency. Reducing your reliance on the mouse for common tasks can dramatically speed up your workflow.\\n\\nLet's start with the essentials. Everyone knows Ctrl/Cmd + C (copy) and Ctrl/Cmd + V (paste), but don't forget their siblings: Ctrl/Cmd + X (cut) to move text, Ctrl/Cmd + Z (undo) to reverse a mistake, and Ctrl/Cmd + S to save your work frequently.\\n\\nText navigation is another huge time-saver. Instead of clicking with the mouse, use Ctrl/Cmd + Arrow Keys to jump between words. Holding Shift while doing this will select the text as you jump (e.g., Shift + Ctrl + Right Arrow selects the next word). The Home and End keys will take you to the beginning or end of a line, and adding Ctrl/Cmd will jump you to the start or end of the entire document.\\n\\nDon't stop there. Learn the shortcuts for your most-used applications. Alt + Tab (or Cmd + Tab on Mac) to switch between open windows is a must-know. Ctrl + T to open a new browser tab and Ctrl + W to close one will change how you browse the web. Every second you save by keeping your hands on the keyboard adds up, making you a more efficient and powerful computer user."
+    }
+  },
+  "feedback": {
+    "title": "Submit Feedback",
+    "description": "Have a suggestion or found a bug? We'd love to hear from you. Your feedback helps us improve.",
+    "nameLabel": "Your Name",
+    "namePlaceholder": "e.g., Alex Doe",
+    "messageLabel": "Your Feedback",
+    "messagePlaceholder": "Type your feedback here...",
+    "send": "Send Feedback",
+    "sending": "Sending...",
+    "sentMessage": "Thank you! Your feedback has been submitted.",
+    "close": "Close"
+  },
+  "rating": {
+    "thanks": "Thank you for your feedback!"
+  },
+  "feedbackWall": {
+    "title": "Live User Feedback",
+    "subtitle": "See what people are saying right now."
+  },
+  "onboarding": {
+    "next": "Next",
+    "back": "Back",
+    "finish": "Let's Type!",
+    "skip": "Skip",
+    "close": "Close Tutorial",
+    "step1": {
+      "title": "Welcome!",
+      "content": "Let's take a quick tour to get you familiar with all the features of the typing test."
+    },
+    "step2": {
+      "title": "Configure Your Test",
+      "content": "Before you start, choose a mode, time or word limit, and difficulty. Then hit the big button to begin!"
+    },
+    "step3": {
+      "title": "The Typing Arena",
+      "content": "Once a test begins, just start typing the text. Your real-time WPM and Accuracy will be displayed at the top."
+    },
+    "step4": {
+      "title": "Track Your Progress",
+      "content": "After a few tests, your stats and a progress chart will appear on the main page to help you see your improvement."
+    },
+    "step5": {
+      "title": "Customize & Learn",
+      "content": "Explore guided Lessons and Blog posts, or click the settings icon (⚙️) to change themes, sounds, and language."
+    },
+    "step6": {
+      "title": "You're All Set!",
+      "content": "That's everything you need to know. Challenge yourself and have fun!"
+    }
+  }
+}

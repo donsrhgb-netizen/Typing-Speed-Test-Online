@@ -1,0 +1,284 @@
+{
+  "header": {
+    "lessons": "Lektionen",
+    "tests": "Tests",
+    "blog": "Blog",
+    "settings": "Einstellungen öffnen"
+  },
+  "main": {
+    "back": "Zurück",
+    "landingTitle": "Tippgeschwindigkeitstest",
+    "landingSubtitle": "Wie schnell kannst du tippen? Finden wir es heraus!"
+  },
+  "landing": {
+    "configureTitle": "Konfiguriere deinen Test",
+    "startTyping": "Tippen starten",
+    "tooltipDifficulty": "Passt die Textkomplexität an. Leicht verwendet einfache Wörter. Mittel führt längere Wörter und grundlegende Satzzeichen ein. Schwer bietet komplexes Vokabular und Satzbau.",
+    "tooltipTimeLimit": "Legt die Dauer für den 'Zeit'-Modus fest. Tippen Sie so viel wie möglich, bevor die Zeit abläuft.",
+    "tooltipWordCount": "Legt die Länge für den 'Wörter'-Modus fest. Der Test endet, nachdem Sie die ausgewählte Anzahl von Wörtern getippt haben.",
+    "tooltipMode": "Ändern Sie das Testformat. 'Zeit' ist ein Rennen gegen die Uhr. 'Wörter' ist eine festgelegte Anzahl von Wörtern. 'Zitat' ist das Tippen eines berühmten Zitats.",
+    "time": "Zeit",
+    "words": "Wörter",
+    "quote": "Zitat",
+    "difficulty": {
+      "easy": "Leicht",
+      "medium": "Mittel",
+      "hard": "Schwer"
+    },
+    "detailedArticles": {
+      "title": "Detaillierte Artikel",
+      "subtitle": "Erfahren Sie mehr über die Kunst des Tippens und die Funktionen dieser Website."
+    }
+  },
+  "test": {
+    "reset": "Zurücksetzen",
+    "pause": "Pause",
+    "resume": "Fortsetzen",
+    "pausedTitle": "Pausiert",
+    "pausedMessage": "Klicken oder eine Taste drücken, um fortzufahren",
+    "tooltipRestart": "Aktuellen Test neu starten (Esc)",
+    "tooltipPause": "Test pausieren",
+    "tooltipResume": "Test fortsetzen",
+    "startTyping": "Beginne mit dem Tippen eines beliebigen Zeichens, um den Test zu starten."
+  },
+  "results": {
+    "title": "Test abgeschlossen!",
+    "subtitle": "Hier sind deine Ergebnisse:",
+    "wpm": "WpM",
+    "accuracy": "Genauigkeit",
+    "retry": "Wiederholen",
+    "tryAgain": "Erneut versuchen",
+    "changeSettingsPrompt": "Oder drücke <1>Enter</1>, um die Einstellungen zu ändern",
+    "quoteBy": "Zitat von"
+  },
+  "history": {
+    "title": "Dein Fortschritt",
+    "noHistory": "Absolviere mindestens zwei Tests, um dein Fortschrittsdiagramm zu sehen.",
+    "combined": "Kombiniert",
+    "wpm": "WpM",
+    "accuracy": "Genauigkeit"
+  },
+  "faq": {
+    "title": "FAQs",
+    "q1": "Wie erhöhe ich meine Tippgeschwindigkeit?",
+    "a1": "Regelmäßiges Üben ist der Schlüssel. Konzentriere dich zuerst auf Genauigkeit, dann auf Geschwindigkeit. Benutze alle Finger und schaue nicht auf die Tastatur. Regelmäßige kurze Übungseinheiten sind effektiver als seltene lange.",
+    "q2": "Wie schnell sollte ich tippen können?",
+    "a2": "Die durchschnittliche Tippgeschwindigkeit liegt bei etwa 40 WpM (Wörter pro Minute). Eine Geschwindigkeit von 55 WpM oder mehr gilt als gut. Wettbewerbstipper erreichen oft Geschwindigkeiten von über 100 WpM.",
+    "q3": "Wie wird die Tippgeschwindigkeit gemessen?",
+    "a3": "Die Tippgeschwindigkeit wird in Wörtern pro Minute (WpM) gemessen. Ein \"Wort\" ist standardmäßig fünf Zeichen lang, einschließlich Leerzeichen und Satzzeichen. Die Formel lautet (Gesamtzahl der getippten Zeichen / 5) / Zeit in Minuten.",
+    "q4": "Warum ist es wichtig, einen Tippgeschwindigkeitstest zu machen?",
+    "a4": "Ein Tippgeschwindigkeitstest hilft dir, deine aktuellen Fähigkeiten zu bewerten, deine Verbesserung im Laufe der Zeit zu verfolgen und Schwächen zu identifizieren. Es ist eine großartige Möglichkeit, motiviert zu bleiben, während du übst."
+  },
+  "footer": {
+    "builtWith": "copyright 2025 typing test",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "termsOfService": "Nutzungsbedingungen",
+    "feedback": "Feedback",
+    "help": "Hilfe"
+  },
+  "lessons": {
+    "title": "Tipp-Lektionen",
+    "subtitle": "Baue deine Fähigkeiten von Grund auf mit geführten Lektionen auf.",
+    "startLesson": "Lektion starten",
+    "searchPlaceholder": "Lektionen suchen...",
+    "noResults": "Keine Lektionen gefunden, die Ihrer Suche entsprechen.",
+    "homeRowFJTitle": "Grundreihe, Tasten F und J",
+    "homeRowFJDesc": "Lerne die Grundlage des Zehnfingersystems, indem du die Tasten der Grundreihe meisterst.",
+    "homeRowDKTitle": "Grundreihe, Tasten D und K",
+    "homeRowDKDesc": "Erweitere deine Reichweite in der Grundreihe mit den Tasten D und K.",
+    "homeRowSLTitle": "Grundreihe, Tasten S und L",
+    "homeRowSLDesc": "Baue dein Muskelgedächtnis weiter mit S und L aus.",
+    "homeRowA_Title": "Grundreihe, Tasten A und ;",
+    "homeRowA_Desc": "Vervollständige die Grundreihe mit den Tasten A und Semikolon.",
+    "homeRowWords1Title": "Grundreihen-Wörter",
+    "homeRowWords1Desc": "Übe, einfache Wörter nur mit der Grundreihe zu bilden.",
+    "topRowRUTitle": "Obere Reihe, Tasten R und U",
+    "topRowRUDesc": "Greife zur oberen Reihe und lerne die Tasten R und U.",
+    "topRowEITitle": "Obere Reihe, Tasten E und I",
+    "topRowEIDesc": "Übe zwei der häufigsten Vokale, E und I.",
+    "bottomRowVMTitle": "Untere Reihe, Tasten V und M",
+    "bottomRowVMDesc": "Lerne, V und M in der unteren Reihe zu tippen, ohne hinzusehen.",
+    "punctuationTitle": "Satzzeichenübung",
+    "punctuationDesc": "Meistere wichtige Satzzeichen wie Punkte und Kommas.",
+    "topRowTYTitle": "Obere Reihe, Tasten T und Y",
+    "topRowTYDesc": "Setze deine Übung in der oberen Reihe mit T und Y fort.",
+    "topRowWOTitle": "Obere Reihe, Tasten W und O",
+    "topRowWODesc": "Lerne die Tasten W und O, um deinen Wortschatz zu erweitern.",
+    "bottomRowCCommaTitle": "Untere Reihe, C und Komma",
+    "bottomRowCCommaDesc": "Übe die C-Taste und festige deine Fähigkeiten mit dem Komma.",
+    "shiftKeyLeftTitle": "Übung linke Umschalttaste",
+    "shiftKeyLeftDesc": "Lerne, Buchstaben mit der linken Umschalttaste großzuschreiben.",
+    "shiftKeyRightTitle": "Übung rechte Umschalttaste",
+    "shiftKeyRightDesc": "Meistere die Großschreibung mit der rechten Umschalttaste.",
+    "numberRow10Title": "Zahlenreihe, 1 und 0",
+    "numberRow10Desc": "Eine Einführung in das Tippen von Zahlen mit 1 und 0.",
+    "commonWordsTitle": "Übung häufiger Wörter",
+    "commonWordsDesc": "Tippe einige der am häufigsten verwendeten Wörter auf Deutsch.",
+    "topRowQPTitle": "Obere Reihe, Tasten Q und P",
+    "topRowQPDesc": "Vervollständige die obere Reihe mit den Tasten Q und P.",
+    "bottomRowXPeriodTitle": "Untere Reihe, X und Punkt",
+    "bottomRowXPeriodDesc": "Übe die X-Taste und den Punkt zum Beenden von Sätzen.",
+    "bottomRowZSlashTitle": "Untere Reihe, Tasten Z und /",
+    "bottomRowZSlashDesc": "Lerne die letzten Buchstaben der unteren Reihe, Z und /.",
+    "numberRow29Title": "Zahlenreihe, 2 und 9",
+    "numberRow29Desc": "Erweitere deine Fähigkeiten im Zahlentippen mit 2 und 9.",
+    "numberRow38Title": "Zahlenreihe, 3 und 8",
+    "numberRow38Desc": "Übe weiterhin die Zahlenreihe mit 3 und 8.",
+    "combinedRowFluencyTitle": "Fließendes Tippen zwischen Reihen",
+    "combinedRowFluencyDesc": "Übe das Tippen von Wörtern, die Tasten aus allen Reihen verwenden.",
+    "capitalizationPracticeTitle": "Großschreibungsübung",
+    "capitalizationPracticeDesc": "Verbessere deine Verwendung der Umschalttaste durch Großschreibung von Sätzen.",
+    "commonSymbolsTitle": "Häufige Symbole",
+    "commonSymbolsDesc": "Übe das Tippen von häufigen Symbolen wie ?, ! und Anführungszeichen.",
+    "longWordPracticeTitle": "Übung mit langen Wörtern",
+    "longWordPracticeDesc": "Fordere dich selbst heraus, indem du längere, komplexere Wörter tippst.",
+    "pangramPracticeTitle": "Pangramm-Übung",
+    "pangramPracticeDesc": "Tippe Sätze, die jeden Buchstaben des Alphabets enthalten."
+  },
+  "lesson": {
+    "accuracy": "Genauigkeit",
+    "complete": "Lektion abgeschlossen!",
+    "retry": "Lektion wiederholen",
+    "backToLessons": "Zurück zu den Lektionen",
+    "nextLesson": "Nächste Lektion",
+    "upNext": "Als Nächstes:"
+  },
+  "stats": {
+    "avgSpeed": "Durchschn. Geschw.",
+    "wpm": "WpM",
+    "avgAcc": "Durchschn. Genauigk.",
+    "typingTime": "Tippzeit",
+    "dailyGoal": "Tagesziel"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "appearanceTitle": "Erscheinungsbild",
+    "theme": "Thema",
+    "specificThemes": "Spezifische Designs",
+    "light": "Hell",
+    "dark": "Dunkel",
+    "system": "System"
+  },
+  "certificate": {
+    "generate": "Zertifikat erstellen",
+    "title": "Leistungszertifikat",
+    "certifyLine": "Hiermit wird bescheinigt, dass",
+    "achievedRankLine": "den Rang eines",
+    "statsLine": "mit einer Durchschnittsgeschwindigkeit von {{wpm}} WpM und einer Genauigkeit von {{accuracy}}% in {{tests}} Tests erreicht hat.",
+    "rank": {
+      "dedicated": "Engagierten Tippers",
+      "proficient": "Kompetenten Tippers",
+      "expert": "Experten-Tippers",
+      "virtuoso": "Tipp-Virtuosen"
+    },
+    "quotes": {
+      "beginner1": "\"Eine Reise von tausend Meilen beginnt mit einem einzigen Schritt.\"",
+      "beginner2": "\"Erfolg ist die Summe kleiner Anstrengungen, die Tag für Tag wiederholt werden.\"",
+      "intermediate1": "\"Es spielt keine Rolle, wie langsam du vorankommst, solange du nicht stehen bleibst.\"",
+      "intermediate2": "\"Übung ist nicht das, was man tut, wenn man gut ist. Es ist das, was einen gut macht.\"",
+      "expert1": "\"Wir sind, was wir wiederholt tun. Exzellenz ist also kein Akt, sondern eine Gewohnheit.\"",
+      "expert2": "\"Geschwindigkeit ist ein Nebenprodukt der Genauigkeit.\""
+    },
+    "namePrompt": "Geben Sie Ihren Namen ein",
+    "namePlaceholder": "z.B. Alex Schmidt",
+    "print": "Drucken",
+    "download": "Herunterladen",
+    "downloading": "Wird heruntergeladen...",
+    "close": "Schließen",
+    "dateOfIssue": "Ausstellungsdatum",
+    "signature": "Unterschrift",
+    "signatureName": "TypingTest.App",
+    "testsCompleted": "Tests abgeschlossen"
+  },
+  "blog": {
+    "title": "Unser Blog",
+    "subtitle": "Tipps, Tricks und Einblicke, die Ihnen helfen, ein besserer Tipper zu werden.",
+    "readMore": "Weiterlesen",
+    "backToBlog": "Zurück zum Blog",
+    "post1": {
+      "title": "WpM & Genauigkeit verstehen: Die Zwillingssäulen der Tippfähigkeit",
+      "summary": "Gehen Sie über die Grundlagen von WpM und Genauigkeit hinaus. Erfahren Sie, wie diese Kernmetriken in jedem Online-Tipp-Test berechnet werden, warum eine hohe Genauigkeit beim Tipp-Test Ihre Geheimwaffe für Geschwindigkeit ist und wie Sie Ihre Ergebnisse effektiv interpretieren.",
+      "content": "Wenn Sie einen Online-Tipp-Test machen, werden immer zwei Metriken hervorstechen: Wörter pro Minute (WpM) und Genauigkeit. Es ist leicht, sich von der Aufregung eines hohen WpM-Wertes mitreißen zu lassen, aber um ein wirklich kompetenter Tipper zu werden, müssen Sie die tiefe und symbiotische Beziehung zwischen diesen beiden Zahlen verstehen. Sie sind die Zwillingssäulen, die jedes effektive Tippen stützen, egal ob Sie einen lockeren Englisch-Tipp-Test oder eine professionelle Zertifizierung absolvieren.\\n\\nZuerst wollen wir WpM entmystifizieren. Diese Metrik misst Ihre Rohgeschwindigkeit. In einem standardisierten Tippgeschwindigkeitstest wird ein 'Wort' als fünf Tastenanschläge definiert, einschließlich Buchstaben, Leerzeichen und Satzzeichen. Wenn Sie also 300 Zeichen in einer Minute tippen, beträgt Ihr Brutto-WpM 60. Diese App berechnet Ihr WpM in Echtzeit und gibt Ihnen sofortiges Feedback zu Ihrem Tempo während jedes Geschwindigkeitstests. Es ist jedoch entscheidend, zwischen Brutto-WpM (Rohgeschwindigkeit) und Netto-WpM (Geschwindigkeit nach Berücksichtigung von Fehlern) zu unterscheiden. Während sich viele Apps auf die Bruttogeschwindigkeit konzentrieren, ist Ihre wahre, praktische Geschwindigkeit immer die Nettozahl, da Fehler in der realen Welt Zeit zur Korrektur benötigen. Ein guter Tipp-Test-Durchschnitt für die meisten Erwachsenen liegt bei etwa 40 WpM, aber mit Übung in einem kostenlosen Tipp-Test wie diesem ist das Erreichen von 60-70 WpM ein sehr erreichbares Ziel.\\n\\nDies bringt uns zur zweiten und wohl wichtigeren Säule: der Genauigkeit beim Tipp-Test. Genauigkeit ist der Prozentsatz der Zeichen, die Sie korrekt tippen. Es mag weniger aufregend erscheinen als die Rohgeschwindigkeit, aber es ist die wahre Grundlage eines schnellen Tippers. Stellen Sie sich zwei Tipper vor: Der eine tippt mit 80 WpM bei 90% Genauigkeit, der andere mit 60 WpM bei 99% Genauigkeit. Der erste Tipper macht 8 Fehler pro Minute, die ihn jedes Mal zum Anhalten, mehrmaligen Drücken der Rücktaste und Neutippen zwingen. Der zweite Tipper macht weniger als einen Fehler pro Minute. In jedem praktischen Szenario ist der zweite, genauere Tipper weitaus effizienter. Deshalb zeigt unsere Tipp-Test-App Ihre Genauigkeit prominent an. Ihr ursprüngliches Ziel sollte immer sein, eine Genauigkeit von 98% oder höher beizubehalten. Erst wenn Sie das konsequent schaffen, sollten Sie sich darauf konzentrieren, Ihre Geschwindigkeit zu steigern.\\n\\nDie Magie geschieht, wenn Sie erkennen, dass Geschwindigkeit ein Nebenprodukt der Genauigkeit ist. Wenn Sie Ihre Finger darauf trainieren, jedes Mal die richtigen Tasten zu treffen, bauen Sie ein sauberes, effizientes Muskelgedächtnis auf. Sie eliminieren die zögerlichen, ruckartigen Bewegungen der Fehlerkorrektur. Ihre Finger beginnen, über die Tastatur zu fließen. Indem Sie weiterhin mit unserem kostenlosen Tipp-Test üben und sich auf perfekte Tastenanschläge konzentrieren, wird Ihre Geschwindigkeit natürlich und nachhaltig zunehmen. Nutzen Sie diesen Online-Tipp-Test, um diese solide Grundlage zu schaffen. Konzentrieren Sie sich zuerst auf Ihre Genauigkeit beim Tipp-Test, und die schnellen Ergebnisse des Tipp-Tests werden folgen."
+    },
+    "post2": {
+      "title": "Eine geführte Tour durch den Lektionen-Bereich",
+      "summary": "Der Weg zu 100 WpM beginnt hier. Entdecken Sie, wie unsere strukturierten Lektionen Sie von einem Anfänger zu einem Experten machen, der für jeden fortgeschrittenen Englisch-Tipp-Test bereit ist, angefangen bei den Grundlagen bis hin zu komplexen Herausforderungen.",
+      "content": "Wenn Sie Ihre Fähigkeiten ernsthaft verbessern möchten, ist der Bereich 'Lektionen' Ihr ultimatives Trainingsgelände. Während ein zufälliger Tipp-Test hervorragend zur Standortbestimmung geeignet ist, bieten unsere Lektionen einen strukturierten, methodischen Weg zur Meisterschaft. Sie sind darauf ausgelegt, das grundlegende Muskelgedächtnis aufzubauen, das erforderlich ist, um in jeder Tippumgebung zu glänzen, von einem einfachen Englisch-Tipp-Test bis hin zu einem anspruchsvollen fortgeschrittenen Tipp-Test.\\n\\nDie Reise beginnt ganz am Anfang, mit etwas, das man als 'ABC-Tipp-Test' für Ihre Finger betrachten könnte: der Grundreihe. Jede der ersten Lektionen führt nur wenige neue Tasten ein. Diese bewusste, fokussierte Wiederholung ist der Kern effektiven Lernens. Sie trainiert Ihre Finger, zu wissen, wo sich jede Taste befindet, ohne bewusstes Nachdenken, was die Definition des Zehnfingersystems ist. Diese Phase zu überstürzen ist ein häufiger Fehler; nehmen Sie sich Zeit, um eine nahezu perfekte Genauigkeit in diesen grundlegenden Lektionen zu erreichen, bevor Sie fortfahren. Stellen Sie es sich so vor, als würden Sie das Alphabet lernen, bevor Sie versuchen, einen Roman zu schreiben.\\n\\nIm weiteren Verlauf werden die Lektionen komplexer. Sie wechseln von einzelnen Buchstaben zur Bildung von Wörtern und dann zu vollständigen Sätzen. Wir führen Satzzeichen, Großschreibung mit den Umschalttasten und Zahlen ein. Diese progressive Überlastung stellt sicher, dass Sie immer herausgefordert, aber nie überfordert sind. Diese Übungen sind speziell darauf ausgelegt, Sie auf die Vielfalt vorzubereiten, die Sie in einem echten Tipp-Test antreffen werden. Sie werden sogar Fähigkeiten üben, die für einen 'A-bis-Z-Tipp-Test' (auch als Pangramm-Test bekannt) erforderlich sind, bei dem Sie Sätze tippen müssen, die jeden Buchstaben des Alphabets enthalten, um sicherzustellen, dass keine Taste unberührt bleibt.\\n\\nUnsere Lektionen sind die perfekte Vorbereitung für einen fortgeschrittenen Englisch-Tipp-Test. Sie lehren Sie nicht nur das Tastaturlayout, sondern trainieren Sie auch in häufigen Buchstabenkombinationen und Wortmustern der deutschen Sprache. Wenn Sie alle Lektionen abgeschlossen haben, werden Sie das Selbstvertrauen und das Muskelgedächtnis haben, um jede Herausforderung zu meistern. Machen Sie sich während der Lektionen keine Sorgen um Ihre WpM; der alleinige Fokus sollte auf Genauigkeit und richtiger Haltung liegen. Sobald Sie die Lektionen abgeschlossen haben, können Sie zu unserem Geschwindigkeitstest-Bereich zurückkehren, um zu sehen, wie sehr sich Ihre harte Arbeit ausgezahlt hat. Ihre Finger werden den Weg kennen."
+    },
+    "post3": {
+      "title": "Passen Sie Ihre Erfahrung an: Ein Blick auf die Einstellungen",
+      "summary": "Lernen Sie, jede Übungssitzung auf Ihre spezifischen Ziele zuzuschneiden. Entdecken Sie, wie Sie verschiedene Modi und Einstellungen verwenden, um Herausforderungen wie einen Live-Chat-Tipp-Test oder einen Tipp-Test nur in Kleinbuchstaben zu simulieren und diese kostenlose Tipp-Test-App zu Ihrem persönlichen Tipp-Trainer zu machen.",
+      "content": "Eine personalisierte Übungsumgebung ist ein mächtiges Werkzeug zur Verbesserung. Ein generischer Einheitsansatz bei einem Tipp-Test kann zu Stagnation führen. Deshalb gibt Ihnen diese kostenlose Tipp-Test-App umfassende Kontrolle über Ihre Übungssitzungen, sodass Sie Schwächen gezielt angehen und reale Herausforderungen präzise simulieren können.\\n\\nIhre erste Ebene der Anpassung ist der 'Spielmodus'-Wähler auf der Hauptseite. Dies ist mehr als nur eine Vorliebe; es ist eine strategische Entscheidung. Der 'Zeit'-Modus ist der klassische Geschwindigkeitstest, perfekt um Ausdauer aufzubauen und unter Druck zu arbeiten. Der 'Wörter'-Modus ist ideal für kurze, fokussierte Sprints, um Ihre Höchstgeschwindigkeit zu steigern. Der 'Zitat'-Modus verlagert den Fokus stark auf die Genauigkeit und bestraft jede Abweichung vom Quelltext. Ein erfahrener Tipper nutzt alle drei Modi, um ein abgerundetes Fähigkeitenset zu entwickeln.\\n\\nÜber den Modus hinaus können Sie den Inhalt anpassen. Die Schwierigkeitseinstellung (Leicht, Mittel, Schwer) ändert die Komplexität des Vokabulars und des Satzbaus, sodass Sie die Herausforderung mit zunehmender Verbesserung skalieren können. Dies ist unerlässlich für jeden, der sich auf einen fortgeschrittenen Tipp-Test vorbereitet. Sie können aber auch spezifische Szenarien simulieren. Haben Sie zum Beispiel schon einmal überlegt, für einen 'Live-Chat-Tipp-Test' zu üben? Im Kundenservice oder in der schnelllebigen Teamkommunikation tippen Sie in kurzen, schnellen Stößen. Sie können dies simulieren, indem Sie den 'Wörter'-Modus mit einer geringen Wortanzahl (wie 10 oder 25) wählen. Dies trainiert eine andere Art von Geschwindigkeit als ein 5-minütiger Marathon-Test.\\n\\nWas ist mit spezifischen technischen Herausforderungen? Einige Programmier- oder Dateneingabeaufgaben erfordern möglicherweise keine Großschreibung. Sie können dies üben, indem Sie die Umschalttaste bewusst ignorieren, um einen 'Tipp-Test nur in Kleinbuchstaben' zu simulieren und sich rein auf die Geschwindigkeit Ihrer Buchstabentasten zu konzentrieren. Das Einstellungsfeld, das über die Kopfzeile zugänglich ist, ermöglicht eine weitere Personalisierung. Sie können aus verschiedenen visuellen Themen wählen, um eines zu finden, das für Ihre Augen angenehm ist, und Sie können das Audio-Feedback nach Ihren Wünschen feinabstimmen. Durch die Kombination all dieser Optionen können Sie diese Plattform von einem einfachen schnellen Tipp-Test in ein anspruchsvolles Trainingswerkzeug verwandeln, das perfekt darauf zugeschnitten ist, Ihnen beim Erreichen Ihrer Ziele zu helfen."
+    },
+    "post4": {
+      "title": "Analysieren Sie Ihren Fortschritt: Das Verlaufsdiagramm verstehen",
+      "summary": "Ihre Daten erzählen die Geschichte Ihrer Tipp-Reise. Lernen Sie, wie Sie die Statistiken und das Verlaufsdiagramm in unserer Tipp-Test-App verwenden, um Ihren Tipp-Test-Durchschnitt zu verfolgen, Probleme zu diagnostizieren, Plateaus zu durchbrechen und ein beständigerer Tipper zu werden.",
+      "content": "Das alte Sprichwort 'Was gemessen wird, wird auch gemanagt' trifft besonders beim Erlernen einer neuen Fähigkeit zu. Jeder Online-Tipp-Test, den Sie abschließen, liefert wertvolle Daten. Unsere Tipp-Test-App speichert und visualisiert diese Daten automatisch und verwandelt sie in Ihren persönlichen Fortschrittsbericht. Das Lesen dieses Berichts ist der Schlüssel zu intelligenter, effizienter Übung.\\n\\nIhre Reise beginnt mit den übergeordneten Statistiken, die direkt auf der Startseite angezeigt werden. Hier finden Sie Ihren allgemeinen 'Tipp-Test-Durchschnitt' für WpM und Genauigkeit. Dies gibt Ihnen einen schnellen Überblick über Ihr aktuelles Fähigkeitsniveau. Sind Sie im Durchschnitt ein 40-WpM-Tipper oder ein 60-WpM-Tipper? Liegt Ihre durchschnittliche 'Tipp-Test-Genauigkeit' über den empfohlenen 98%? Dieses Dashboard erfasst auch Ihre gesamte Tippzeit, ein Zeugnis Ihres Engagements, und enthält einen Tagesziel-Tracker, der Ihnen hilft, eine konsistente Übungsgewohnheit aufzubauen.\\n\\nFür eine tiefere Analyse schauen Sie sich das Verlaufsdiagramm an. Dieses Diagramm visualisiert die Ergebnisse Ihrer letzten 10 Tests und erzählt eine Geschichte Ihrer jüngsten Leistung. Sehen Sie einen stetigen Aufwärtstrend bei den WpM? Das ist großartig! Aber schauen Sie genauer hin. Was macht Ihre Genauigkeitslinie, während Ihre WpM-Linie steigt? Wenn sie sinkt, ist das ein klares Zeichen dafür, dass Sie auf Kosten der Präzision auf Geschwindigkeit drängen – ein häufiger Fehler. Dies ist Ihr Hinweis, für einige Sitzungen langsamer zu machen und sich wieder auf die Grundlagen zu konzentrieren. Umgekehrt, wenn sowohl Ihre Geschwindigkeit als auch Ihre Genauigkeit stagnieren, haben Sie möglicherweise ein Plateau erreicht. Dies ist der Zeitpunkt, Ihre Routine zu ändern, vielleicht indem Sie die Schwierigkeit erhöhen oder einen anderen Testmodus ausprobieren.\\n\\nDieser datengesteuerte Ansatz unterscheidet gelegentliches Üben von gezieltem Training. Das Diagramm hilft Ihnen, Ihre eigenen Schwächen zu diagnostizieren. Sind Ihre Ergebnisse inkonsistent? Dies könnte auf Konzentrations- oder Ermüdungsprobleme hinweisen. Ist Ihre Genauigkeit durchweg niedrig? Es ist Zeit, den Lektionen-Bereich erneut zu besuchen. Indem Sie Ihre Leistung in unserer Tipp-Test-App regelmäßig überprüfen, können Sie aufhören, blind zu üben, und anfangen, intelligent zu trainieren. Lassen Sie die Daten Ihr Führer auf dem Weg zu einem schnelleren und genaueren Tipper sein."
+    },
+    "post5": {
+      "title": "Ergonomie für Tipper: Richten Sie Ihren Arbeitsplatz für den Erfolg ein",
+      "summary": "Lernen Sie, wie Sie Ihren Schreibtisch, Stuhl und Ihre Haltung optimieren, um schneller, länger und ohne Schmerzen zu tippen.",
+      "content": "Ihre physische Einrichtung spielt eine große Rolle für Ihre Tippfähigkeit. Schlechte Ergonomie kann zu Unbehagen, Ermüdung und sogar zu Repetitive-Strain-Verletzungen (RSI) führen, die alle Ihren Fortschritt behindern. Ein paar kleine Anpassungen können einen großen Unterschied machen.\\n\\nZuerst Ihr Stuhl und Ihre Haltung. Sitzen Sie gerade mit den Füßen flach auf dem Boden. Ihre Ellbogen sollten einen Winkel von etwa 90 Grad haben, mit geraden Handgelenken, die nicht nach oben oder unten gebogen sind. Passen Sie Ihre Stuhlhöhe an, um dies zu erreichen. Ihr Monitor sollte so positioniert sein, dass die Oberkante des Bildschirms auf oder leicht unter Augenhöhe liegt, um Nackenverspannungen zu vermeiden.\\n\\nAls Nächstes Ihre Tastatur und Maus. Platzieren Sie Ihre Tastatur direkt vor sich, zentriert zu Ihrem Körper. Wenn Sie Ihre Finger auf die Grundreihe legen, sollten Ihre Arme entspannt sein. Vermeiden Sie es, sich zu strecken oder zu dehnen. Wenn Sie eine Handballenauflage verwenden, stellen Sie sicher, dass sie die Handfläche und nicht das Handgelenk selbst stützt, um eine korrekte Ausrichtung zu gewährleisten.\\n\\nDenken Sie schließlich daran, Pausen zu machen! Die 20-20-20-Regel ist eine ausgezeichnete Richtlinie: Schauen Sie alle 20 Minuten 20 Sekunden lang auf etwas, das 20 Fuß (ca. 6 Meter) entfernt ist. Stehen Sie auf, strecken Sie sich und gönnen Sie Ihren Händen und Augen eine Pause. Ein entspannter Tipper ist ein schnellerer und beständigerer Tipper."
+    },
+    "post6": {
+      "title": "Über die Grundlagen hinaus: Effektive Übungsstrategien",
+      "summary": "Stecken Sie auf einem Tipp-Plateau fest? Entdecken Sie fortgeschrittene Übungstechniken wie gezielte Übungen, bewusstes Üben und wie Sie die Funktionen dieser App nutzen können, um Barrieren zu durchbrechen.",
+      "content": "Sie haben also die Grundreihe gemeistert und Ihre WpM steigen, aber plötzlich stagniert Ihr Fortschritt. Das ist ein Tipp-Plateau, und es ist völlig normal. Um es zu durchbrechen, müssen Sie von einfacher Wiederholung zu bewusstem Üben übergehen.\\n\\nBewusstes Üben bedeutet, Ihre spezifischen Schwächen zu identifizieren und gezielt anzugehen. Fällt Ihre Genauigkeit bei Wörtern mit 'q' oder 'z'? Haben Sie Schwierigkeiten, Buchstaben mit dem kleinen Finger großzuschreiben? Nutzen Sie den Bereich 'Lektionen', um diese speziellen Tasten oder Fähigkeiten zu trainieren. Das wiederholte Tippen von 'Franz jagt im komplett verwahrlosten Taxi quer durch Bayern' ist großartig für die allgemeine Übung, aber gezielte Übungen werden Ihre wiederkehrenden Fehler beheben.\\n\\nEine weitere Schlüsselstrategie ist, sich knapp außerhalb Ihrer Komfortzone zu bewegen. Wenn Ihre durchschnittliche Geschwindigkeit 50 WpM beträgt, zielen Sie in der Übung nicht nur auf 50 WpM ab. Versuchen Sie, 55 WpM zu erreichen, auch wenn Ihre Genauigkeit leicht sinkt. Dies zwingt Ihre Finger, sich schneller zu bewegen und ein neues Muskelgedächtnis aufzubauen. Nach einigen dieser 'Sprint'-Sitzungen gehen Sie wieder auf 50 WpM zurück und konzentrieren sich darauf, Ihre Genauigkeit wieder auf 98 % oder höher zu bringen. Dieser Zyklus aus dem Streben nach Geschwindigkeit und der anschließenden Konsolidierung mit Genauigkeit ist eine der schnellsten Möglichkeiten zur Verbesserung.\\n\\nZuletzt ist Beständigkeit wichtiger als Intensität. Tägliches Üben für 15 Minuten ist weitaus effektiver als eine zweistündige Sitzung einmal pro Woche. Verwenden Sie den 'Tagesziel'-Tracker auf der Startseite, um diese Gewohnheit aufzubauen."
+    },
+    "post7": {
+      "title": "Geschwindigkeit freischalten mit Tastenkombinationen",
+      "summary": "Tippen bedeutet nicht nur, Prosa zu schreiben. Steigern Sie Ihre allgemeine Produktivität, indem Sie wichtige Tastenkombinationen zur Navigation in Texten und zur Verwaltung von Anwendungen beherrschen.",
+      "content": "Gute Tippfähigkeiten sparen Ihnen Zeit beim Schreiben, aber was ist mit all den anderen Dingen, die Sie am Computer tun? Das Beherrschen von Tastenkombinationen ist die nächste Stufe der Effizienz. Wenn Sie Ihre Abhängigkeit von der Maus für gängige Aufgaben reduzieren, kann dies Ihren Arbeitsablauf drastisch beschleunigen.\\n\\nBeginnen wir mit den Grundlagen. Jeder kennt Strg/Cmd + C (kopieren) und Strg/Cmd + V (einfügen), aber vergessen Sie nicht ihre Geschwister: Strg/Cmd + X (ausschneiden), um Text zu verschieben, Strg/Cmd + Z (rückgängig), um einen Fehler rückgängig zu machen, und Strg/Cmd + S, um Ihre Arbeit häufig zu speichern.\\n\\nDie Textnavigation ist ein anderer großer Zeitsparer. Anstatt mit der Maus zu klicken, verwenden Sie Strg/Cmd + Pfeiltasten, um zwischen Wörtern zu springen. Wenn Sie dabei die Umschalttaste gedrückt halten, wird der Text während des Springens ausgewählt (z. B. Umschalt + Strg + Pfeil nach rechts wählt das nächste Wort aus). Die Tasten Pos1 und Ende bringen Sie an den Anfang oder das Ende einer Zeile, und das Hinzufügen von Strg/Cmd springt an den Anfang oder das Ende des gesamten Dokuments.\\n\\nHören Sie hier nicht auf. Lernen Sie die Tastenkombinationen für Ihre am häufigsten verwendeten Anwendungen. Alt + Tab (oder Cmd + Tab auf dem Mac), um zwischen geöffneten Fenstern zu wechseln, ist ein Muss. Strg + T zum Öffnen eines neuen Browser-Tabs und Strg + W zum Schließen eines Tabs werden Ihre Art zu surfen verändern. Jede Sekunde, die Sie sparen, indem Sie Ihre Hände auf der Tastatur lassen, summiert sich und macht Sie zu einem effizienteren und leistungsfähigeren Computerbenutzer."
+    }
+  },
+  "feedback": {
+    "title": "Feedback Senden",
+    "description": "Haben Sie einen Vorschlag oder einen Fehler gefunden? Wir würden uns freuen, von Ihnen zu hören. Ihr Feedback hilft uns, uns zu verbessern.",
+    "nameLabel": "Ihr Name",
+    "namePlaceholder": "z.B. Alex Schmidt",
+    "messageLabel": "Ihr Feedback",
+    "messagePlaceholder": "Geben Sie hier Ihr Feedback ein...",
+    "send": "Feedback Senden",
+    "sending": "Senden...",
+    "sentMessage": "Vielen Dank! Ihr Feedback wurde übermittelt.",
+    "close": "Schließen"
+  },
+  "rating": {
+    "thanks": "Vielen Dank für Ihr Feedback!"
+  },
+  "feedbackWall": {
+    "title": "Live-Benutzerfeedback",
+    "subtitle": "Sehen Sie, was die Leute gerade sagen."
+  },
+  "onboarding": {
+    "next": "Weiter",
+    "back": "Zurück",
+    "finish": "Los tippen!",
+    "skip": "Überspringen",
+    "close": "Tutorial schließen",
+    "step1": {
+      "title": "Willkommen!",
+      "content": "Machen wir eine kurze Tour, um Sie mit allen Funktionen des Tipp-Tests vertraut zu machen."
+    },
+    "step2": {
+      "title": "Konfigurieren Sie Ihren Test",
+      "content": "Bevor Sie beginnen, wählen Sie einen Modus, ein Zeit- oder Wortlimit und eine Schwierigkeit. Dann drücken Sie den großen Knopf, um zu beginnen!"
+    },
+    "step3": {
+      "title": "Die Tipp-Arena",
+      "content": "Sobald ein Test beginnt, tippen Sie einfach den Text. Ihre Echtzeit-WpM und Genauigkeit werden oben angezeigt."
+    },
+    "step4": {
+      "title": "Verfolgen Sie Ihren Fortschritt",
+      "content": "Nach ein paar Tests erscheinen Ihre Statistiken und ein Fortschrittsdiagramm auf der Hauptseite, um Ihnen Ihre Verbesserung zu zeigen."
+    },
+    "step5": {
+      "title": "Anpassen & Lernen",
+      "content": "Erkunden Sie geführte Lektionen und Blog-Beiträge oder klicken Sie auf das Einstellungssymbol (⚙️), um Themen, Sounds und Sprache zu ändern."
+    },
+    "step6": {
+      "title": "Sie sind startklar!",
+      "content": "Das ist alles, was Sie wissen müssen. Fordern Sie sich selbst heraus und haben Sie Spaß!"
+    }
+  }
+}

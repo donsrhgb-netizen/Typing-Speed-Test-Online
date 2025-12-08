@@ -1,0 +1,60 @@
+import { BlogPostData } from '../types';
+
+export const blogPosts: BlogPostData[] = [
+  {
+    id: 'understanding-wpm-accuracy',
+    titleKey: 'blog.post1.title',
+    summaryKey: 'blog.post1.summary',
+    contentKey: 'blog.post1.content',
+    author: 'The TypingTest.App Team',
+    date: 'October 26, 2024',
+  },
+  {
+    id: 'mastering-the-lessons',
+    titleKey: 'blog.post2.title',
+    summaryKey: 'blog.post2.summary',
+    contentKey: 'blog.post2.content',
+    author: 'The TypingTest.App Team',
+    date: 'October 25, 2024',
+  },
+  {
+    id: 'customizing-your-experience',
+    titleKey: 'blog.post3.title',
+    summaryKey: 'blog.post3.summary',
+    contentKey: 'blog.post3.content',
+    author: 'The TypingTest.App Team',
+    date: 'October 24, 2024',
+  },
+  {
+    id: 'analyzing-your-progress',
+    titleKey: 'blog.post4.title',
+    summaryKey: 'blog.post4.summary',
+    contentKey: 'blog.post4.content',
+    author: 'The TypingTest.App Team',
+    date: 'October 23, 2024',
+  },
+  {
+    id: 'ergonomics-for-typists',
+    titleKey: 'blog.post5.title',
+    summaryKey: 'blog.post5.summary',
+    contentKey: 'blog.post5.content',
+    author: 'The TypingTest.App Team',
+    date: 'October 22, 2024',
+  },
+  {
+    id: 'effective-practice-strategies',
+    titleKey: 'blog.post6.title',
+    summaryKey: 'blog.post6.summary',
+    contentKey: 'blog.post6.content',
+    author: 'The TypingTest.App Team',
+    date: 'October 21, 2024',
+  },
+  {
+    id: 'unlock-speed-with-shortcuts',
+    titleKey: 'blog.post7.title',
+    summaryKey: 'blog.post7.summary',
+    contentKey: 'blog.post7.content',
+    author: 'The TypingTest.App Team',
+    date: 'October 20, 2024',
+  },
+];
