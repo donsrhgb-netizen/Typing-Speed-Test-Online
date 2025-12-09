@@ -6,7 +6,7 @@ import LoadingSpinner from './components/LoadingSpinner';
 import { LanguageProvider } from './context/LanguageContext';
 
 interface ErrorBoundaryProps {
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 interface ErrorBoundaryState {
@@ -92,14 +92,14 @@ const ThemedApp: React.FC = () => {
   
   useLayoutEffect(() => {
     // Apply theme from React state to ensure sync
-    if (!isLoading) {
+    if (!isLoading && profile?.preferences?.theme) {
       applyTheme(profile.preferences.theme);
     }
-  }, [isLoading, profile.preferences.theme]);
+  }, [isLoading, profile]);
 
   if (isLoading) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center bg-[var(--color-bg-primary)] text-[var(--color-accent-primary)]">
         <LoadingSpinner />
       </div>
     );

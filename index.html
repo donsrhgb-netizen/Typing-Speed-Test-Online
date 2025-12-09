@@ -10,36 +10,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Great+Vibes&family=EB+Garamond:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/html-to-image@1.11.11/dist/html-to-image.js"></script>
+    
     <style>
-      /* CRITICAL: Define default variables immediately. 
-         These are the "Default/Cyberpunk" theme colors. */
+      /* CRITICAL: Define default variables immediately. */
       :root {
         --color-bg-primary: #0f172a;
         --color-bg-secondary: #1e293b;
-        --color-bg-tertiary: #334155;
-        --color-bg-interactive: #475569;
         --color-text-primary: #f1f5f9;
         --color-text-secondary: #94a3b8;
-        --color-text-tertiary: #64748b;
-        --color-text-inverted: #0f172a;
         --color-accent-primary: #22d3ee;
-        --color-accent-primary-rgb: 34, 211, 238;
-        --color-accent-secondary: #06b6d4;
-        --color-shadow-primary: rgba(34, 211, 238, 0.1);
-        --color-error: #f87171;
-        --color-error-bg: rgba(248, 113, 113, 0.2);
-        --color-correct: #4ade80;
-        --color-correct-bg: rgba(74, 222, 128, 0.15);
       }
       
-      /* Force body styling with standard CSS to avoid FOUC (Flash of Unstyled Content) 
-         or white screen if Tailwind is slow/fails. */
       body {
         font-family: 'Poppins', sans-serif;
         background-color: #0f172a; /* Hard fallback */
-        background-color: var(--color-bg-primary);
         color: #f1f5f9; /* Hard fallback */
-        color: var(--color-text-primary);
         margin: 0;
         min-height: 100vh;
         overflow-x: hidden;
@@ -65,83 +50,122 @@
       
       @keyframes key-pop {
         0% { transform: scale(1); background-color: transparent; }
-        50% { transform: scale(1.2); background-color: rgba(var(--color-accent-primary-rgb), 0.3); }
+        50% { transform: scale(1.2); background-color: rgba(34, 211, 238, 0.3); }
         100% { transform: scale(1); background-color: transparent; }
       }
       .animate-key-pop { animation: key-pop 0.2s ease-out; border-radius: 3px; }
-      
-      /* Print styles */
-      @media print {
-        body * { visibility: hidden; }
-        .print-container, .print-container * { visibility: visible; }
-        .print-container { position: absolute; left: 0; top: 0; width: 100%; height: 100%; padding: 0; margin: 0; }
-        .print-certificate { width: 100vw; height: 100vh; border-radius: 0; border: none; box-shadow: none; }
-        .no-print { display: none !important; }
+
+      /* Loading Fallback Styles */
+      #loading-fallback {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        background-color: #0f172a;
+        color: #f1f5f9;
+        font-family: sans-serif;
+        z-index: 9999;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+      .loader-spinner {
+        border: 4px solid rgba(255, 255, 255, 0.1);
+        border-left-color: #22d3ee;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+        margin-bottom: 1rem;
+      }
+      @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+      #error-display {
+        display: none;
+        padding: 20px;
+        color: #ff6b6b;
+        background: #1a1a1a;
+        font-family: monospace;
+        white-space: pre-wrap;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10000;
+        overflow: auto;
       }
     </style>
+
+    <!-- Global Error Handler: Catches startup crashes -->
+    <script>
+      window.onerror = function(message, source, lineno, colno, error) {
+        var loader = document.getElementById('loading-fallback');
+        if (loader) loader.style.display = 'none';
+        
+        var errorDisplay = document.getElementById('error-display');
+        if (errorDisplay) {
+          errorDisplay.style.display = 'block';
+          var cleanMessage = message || 'Unknown Error';
+          var cleanSource = source || 'Unknown Source';
+          errorDisplay.innerHTML = '<h1>Application Error</h1>' +
+            '<p>The application failed to start. This is usually due to a deployment configuration issue or a syntax error.</p>' +
+            '<hr style="border-color: #333; margin: 10px 0;">' +
+            '<strong>Error:</strong> ' + cleanMessage + '<br>' +
+            '<strong>File:</strong> ' + cleanSource + ':' + lineno + '<br>' +
+            '<pre style="background: #333; padding: 10px; border-radius: 4px; margin-top: 10px;">' + (error ? error.stack : 'No stack trace') + '</pre>';
+        }
+      };
+    </script>
     
-    <!-- Theme Initialization Script: Runs blocking to ensure variables are set before React render -->
+    <!-- Theme Initialization -->
     <script>
       (function() {
         try {
-          // Check local storage safely
           var localProfile = localStorage.getItem('typingTestUserProfile');
           var theme = 'default';
-          
-          // Determine theme based on storage or system preference
           if (localProfile) {
             var parsed = JSON.parse(localProfile);
-            if (parsed.preferences) {
-              if (parsed.preferences.colorMode === 'system') {
-                var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                theme = prefersDark ? 'default' : 'arctic';
-              } else if (parsed.preferences.theme) {
-                theme = parsed.preferences.theme;
-              }
+            if (parsed.preferences && parsed.preferences.theme) {
+              theme = parsed.preferences.theme;
+            } else if (parsed.preferences && parsed.preferences.colorMode === 'system') {
+               theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'default' : 'arctic';
             }
           } else {
-             var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-             theme = prefersDark ? 'default' : 'arctic';
+             theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'default' : 'arctic';
           }
-
-          // Minimal definitions for the two main starting themes to ensure fast painting
-          var themeColors = {
-            'default': {
-              '--color-bg-primary': '#0f172a',
-              '--color-text-primary': '#f1f5f9',
-            },
-            'arctic': {
-              '--color-bg-primary': '#f1f5f9',
-              '--color-text-primary': '#1e293b',
-            }
-          };
-
-          var selected = themeColors[theme];
-          if (selected) {
-            var root = document.documentElement;
-            for (var key in selected) {
-              root.style.setProperty(key, selected[key]);
-            }
+          
+          if (theme === 'arctic') {
+            document.documentElement.style.setProperty('--color-bg-primary', '#f1f5f9');
+            document.documentElement.style.setProperty('--color-text-primary', '#1e293b');
+            document.body.style.backgroundColor = '#f1f5f9';
+            document.body.style.color = '#1e293b';
           }
-        } catch (e) {
-          console.warn("Theme init warning:", e);
-        }
+        } catch (e) { console.warn("Theme init warning:", e); }
       })();
     </script>
 
   <script type="importmap">
 {
   "imports": {
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "date-fns": "https://aistudiocdn.com/date-fns@^4.1.0"
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "react-dom": "https://esm.sh/react-dom@18.2.0",
+    "react": "https://esm.sh/react@18.2.0",
+    "date-fns": "https://esm.sh/date-fns@2.30.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/"
   }
 }
 </script>
 </head>
-  <!-- Standard CSS class for background added here as valid backup for Tailwind -->
   <body class="bg-[var(--color-bg-primary)] text-[var(--color-text-primary)] transition-colors duration-300">
+    <div id="loading-fallback">
+      <div class="loader-spinner"></div>
+      <div>Loading application...</div>
+    </div>
+    <div id="error-display"></div>
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
   </body>
