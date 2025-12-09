@@ -2,6 +2,7 @@ import React, { createContext, useContext, useState, useEffect, ReactNode } from
 import { UserProfile, TypingTestResult, Difficulty, GameMode } from '../types';
 import { loadProfile, saveProfile } from '../utils/localStorage';
 import { TIME_LIMIT_OPTIONS, DIFFICULTY_OPTIONS, WORD_COUNT_OPTIONS } from '../utils/constants';
+import { themes } from '../utils/themes';
 
 interface ProfileContextType {
   profile: UserProfile;
@@ -24,39 +25,48 @@ const ProfileContext = createContext<ProfileContextType | undefined>(undefined);
 
 export const ProfileProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [isLoading, setIsLoading] = useState(false);
+  
+  // Initialize profile with logic to handle system preferences immediately if needed
   const [profile, setProfile] = useState<UserProfile>(() => {
     const loadedProfile = loadProfile();
-    // This check migrates users from the old 'paragraph' setting (0) to the new default.
+    
+    // Migration check for older profiles
     if (!TIME_LIMIT_OPTIONS.includes(loadedProfile.preferences.timeLimit)) {
       loadedProfile.preferences.timeLimit = 60;
     }
+
+    // Immediate system theme check to prevent flash of wrong theme
+    if (loadedProfile.preferences.colorMode === 'system' && typeof window !== 'undefined') {
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const expectedTheme = prefersDark ? 'default' : 'arctic';
+      if (loadedProfile.preferences.theme !== expectedTheme) {
+        loadedProfile.preferences.theme = expectedTheme;
+      }
+    } else if (loadedProfile.preferences.colorMode === 'light') {
+         if (loadedProfile.preferences.theme !== 'arctic') loadedProfile.preferences.theme = 'arctic';
+    } else if (loadedProfile.preferences.colorMode === 'dark') {
+         if (loadedProfile.preferences.theme === 'arctic') loadedProfile.preferences.theme = 'default';
+    }
+
     return loadedProfile;
   });
 
   useEffect(() => {
-    if (!isLoading) {
-      saveProfile(profile);
-    }
-  }, [profile, isLoading]);
+    saveProfile(profile);
+  }, [profile]);
   
-  // This effect will run when colorMode changes or when loading finishes.
-  // It is responsible for setting the correct theme and for handling system preference changes.
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
-    // This handler will be called when the system theme changes.
     const handleSystemThemeChange = () => {
-      // We only act if the user's preference is 'system'.
-      // By using the functional update form of setProfile, we get the latest state
-      // and avoid stale closure problems.
       setProfile(currentProfile => {
         if (currentProfile.preferences.colorMode !== 'system') {
-          return currentProfile; // Do nothing if not in system mode
+          return currentProfile;
         }
         const prefersDark = mediaQuery.matches;
         const newTheme = prefersDark ? 'default' : 'arctic';
         if (currentProfile.preferences.theme === newTheme) {
-          return currentProfile; // No change needed
+          return currentProfile;
         }
         return {
           ...currentProfile,
@@ -65,32 +75,34 @@ export const ProfileProvider: React.FC<{ children: ReactNode }> = ({ children })
       });
     };
 
-    // Set the initial theme based on the current colorMode preference.
-    setProfile(currentProfile => {
-      const { colorMode } = currentProfile.preferences;
-      let newTheme: string;
-      if (colorMode === 'light') {
-        newTheme = 'arctic';
-      } else if (colorMode === 'dark') {
-        newTheme = 'default';
-      } else { // 'system'
-        newTheme = mediaQuery.matches ? 'default' : 'arctic';
-      }
-      
-      if (currentProfile.preferences.theme === newTheme) {
-        return currentProfile; // No change needed
-      }
-      return {
-        ...currentProfile,
-        preferences: { ...currentProfile.preferences, theme: newTheme },
-      };
-    });
-
-    // Add listener for system theme changes.
     mediaQuery.addEventListener('change', handleSystemThemeChange);
-
-    // Cleanup listener on component unmount or when dependencies change.
     return () => mediaQuery.removeEventListener('change', handleSystemThemeChange);
+  }, []);
+
+  // Watch for colorMode changes to update theme
+  useEffect(() => {
+      setProfile(currentProfile => {
+          const { colorMode } = currentProfile.preferences;
+          let newTheme = currentProfile.preferences.theme;
+
+          if (colorMode === 'light') {
+              newTheme = 'arctic';
+          } else if (colorMode === 'dark') {
+              // Only switch to default if current is arctic (light), otherwise keep user selected dark theme
+               if (newTheme === 'arctic') newTheme = 'default';
+          } else if (colorMode === 'system') {
+              const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+              newTheme = prefersDark ? 'default' : 'arctic';
+          }
+
+          if (currentProfile.preferences.theme === newTheme) {
+              return currentProfile;
+          }
+          return {
+              ...currentProfile,
+              preferences: { ...currentProfile.preferences, theme: newTheme },
+          };
+      });
   }, [profile.preferences.colorMode]);
 
 
@@ -101,7 +113,7 @@ export const ProfileProvider: React.FC<{ children: ReactNode }> = ({ children })
     };
     setProfile(prevProfile => ({
       ...prevProfile,
-      history: [newResult, ...prevProfile.history.slice(0, 99)], // Prepend new result, keep last 100
+      history: [newResult, ...prevProfile.history.slice(0, 99)],
     }));
   };
 
@@ -109,10 +121,7 @@ export const ProfileProvider: React.FC<{ children: ReactNode }> = ({ children })
     if (profile.preferences.difficulty === difficulty) return;
     setProfile(prevProfile => ({
       ...prevProfile,
-      preferences: {
-        ...prevProfile.preferences,
-        difficulty,
-      },
+      preferences: { ...prevProfile.preferences, difficulty },
     }));
   };
   
@@ -120,10 +129,7 @@ export const ProfileProvider: React.FC<{ children: ReactNode }> = ({ children })
     if (profile.preferences.timeLimit === timeLimit) return;
     setProfile(prevProfile => ({
       ...prevProfile,
-      preferences: {
-        ...prevProfile.preferences,
-        timeLimit,
-      },
+      preferences: { ...prevProfile.preferences, timeLimit },
     }));
   };
 
@@ -134,9 +140,6 @@ export const ProfileProvider: React.FC<{ children: ReactNode }> = ({ children })
       preferences: {
         ...prevProfile.preferences,
         theme,
-        // Sync colorMode with the selected theme. 'arctic' is the only light theme.
-        // This ensures the colorMode selector is in a consistent state and that the
-        // system theme override is disabled when a specific theme is chosen.
         colorMode: theme === 'arctic' ? 'light' : 'dark',
       },
     }));
@@ -146,10 +149,7 @@ export const ProfileProvider: React.FC<{ children: ReactNode }> = ({ children })
     if (profile.preferences.gameMode === gameMode) return;
     setProfile(prevProfile => ({
         ...prevProfile,
-        preferences: {
-            ...prevProfile.preferences,
-            gameMode,
-        },
+        preferences: { ...prevProfile.preferences, gameMode },
     }));
   };
 
@@ -157,10 +157,7 @@ export const ProfileProvider: React.FC<{ children: ReactNode }> = ({ children })
     if (profile.preferences.wordCount === wordCount) return;
     setProfile(prevProfile => ({
         ...prevProfile,
-        preferences: {
-            ...prevProfile.preferences,
-            wordCount,
-        },
+        preferences: { ...prevProfile.preferences, wordCount },
     }));
   };
 
@@ -168,20 +165,14 @@ export const ProfileProvider: React.FC<{ children: ReactNode }> = ({ children })
     if (profile.preferences.dailyGoal === minutes) return;
     setProfile(prevProfile => ({
       ...prevProfile,
-      preferences: {
-        ...prevProfile.preferences,
-        dailyGoal: minutes,
-      },
+      preferences: { ...prevProfile.preferences, dailyGoal: minutes },
     }));
   };
   
   const updateColorModePreference = (mode: 'light' | 'dark' | 'system') => {
     setProfile(prevProfile => ({
       ...prevProfile,
-      preferences: {
-        ...prevProfile.preferences,
-        colorMode: mode,
-      },
+      preferences: { ...prevProfile.preferences, colorMode: mode },
     }));
   };
 
@@ -189,10 +180,7 @@ export const ProfileProvider: React.FC<{ children: ReactNode }> = ({ children })
     if (profile.preferences.rating === rating) return;
     setProfile(prevProfile => ({
       ...prevProfile,
-      preferences: {
-        ...prevProfile.preferences,
-        rating,
-      },
+      preferences: { ...prevProfile.preferences, rating },
     }));
   };
 
@@ -201,13 +189,9 @@ export const ProfileProvider: React.FC<{ children: ReactNode }> = ({ children })
       const currentDifficulty = prevProfile.preferences.difficulty;
       const currentIndex = DIFFICULTY_OPTIONS.indexOf(currentDifficulty);
       const nextIndex = (currentIndex + 1) % DIFFICULTY_OPTIONS.length;
-      const nextDifficulty = DIFFICULTY_OPTIONS[nextIndex];
       return {
         ...prevProfile,
-        preferences: {
-          ...prevProfile.preferences,
-          difficulty: nextDifficulty,
-        },
+        preferences: { ...prevProfile.preferences, difficulty: DIFFICULTY_OPTIONS[nextIndex] },
       };
     });
   };
@@ -245,7 +229,7 @@ export const ProfileProvider: React.FC<{ children: ReactNode }> = ({ children })
       addTestResult, 
       updateDifficultyPreference, 
       updateTimeLimitPreference, 
-      updateThemePreference,
+      updateThemePreference, 
       updateGameModePreference,
       updateWordCountPreference,
       updateDailyGoalPreference,
