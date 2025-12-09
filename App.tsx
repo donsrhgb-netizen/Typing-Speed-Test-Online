@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, ErrorInfo, ReactNode } from 'react';
+import React, { useLayoutEffect, ErrorInfo, ReactNode, useEffect } from 'react';
 import MainPage from './components/MainPage';
 import { ProfileProvider, useProfile } from './context/ProfileContext';
 import { applyTheme } from './utils/themes';
@@ -109,6 +109,16 @@ const ThemedApp: React.FC = () => {
 };
 
 const App: React.FC = () => {
+  // Explicitly remove the loading spinner once the App component mounts
+  useEffect(() => {
+    const loader = document.getElementById('loading-fallback');
+    if (loader) {
+      loader.style.opacity = '0';
+      // Allow the transition to finish before removing from DOM
+      setTimeout(() => loader.remove(), 500);
+    }
+  }, []);
+
   return (
     <ErrorBoundary>
       <LanguageProvider>
