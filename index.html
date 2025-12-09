@@ -112,13 +112,26 @@
           var cleanMessage = message || 'Unknown Error';
           var cleanSource = source || 'Unknown Source';
           errorDisplay.innerHTML = '<h1>Application Error</h1>' +
-            '<p>The application failed to start. This is usually due to a deployment configuration issue or a syntax error.</p>' +
+            '<p>The application failed to start.</p>' +
             '<hr style="border-color: #333; margin: 10px 0;">' +
             '<strong>Error:</strong> ' + cleanMessage + '<br>' +
             '<strong>File:</strong> ' + cleanSource + ':' + lineno + '<br>' +
             '<pre style="background: #333; padding: 10px; border-radius: 4px; margin-top: 10px;">' + (error ? error.stack : 'No stack trace') + '</pre>';
         }
       };
+      
+      // FAILSAFE: If app doesn't load in 4 seconds, kill the spinner so user isn't stuck.
+      setTimeout(function() {
+        var loader = document.getElementById('loading-fallback');
+        if (loader && loader.style.opacity !== '0' && loader.style.display !== 'none') {
+             console.warn("App took too long to load. Forcing loader removal.");
+             // We don't hide it completely yet, we just ensure error display is visible if it exists
+             // or let the user see the page if React partially rendered.
+             loader.innerHTML += '<br><div style="color: #f87171; font-size: 0.8rem; margin-top: 10px;">Taking longer than expected...</div>';
+             // Optional: Force remove if you suspect silent failure
+             // loader.style.display = 'none'; 
+        }
+      }, 5000);
     </script>
     
     <!-- Theme Initialization -->
