@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, Component, ErrorInfo, ReactNode } from 'react';
+import React, { useLayoutEffect, ErrorInfo, ReactNode } from 'react';
 import MainPage from './components/MainPage';
 import { ProfileProvider, useProfile } from './context/ProfileContext';
 import { applyTheme } from './utils/themes';
@@ -15,7 +15,7 @@ interface ErrorBoundaryState {
 }
 
 // Simple Error Boundary to catch runtime crashes
-class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
+class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundaryState> {
   constructor(props: ErrorBoundaryProps) {
     super(props);
     this.state = { hasError: false, error: null };
@@ -31,16 +31,51 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
 
   render() {
     if (this.state.hasError) {
+      // Inline styles used here to ensure readability even if CSS/Tailwind fails to load
       return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white p-8 text-center flex-col">
-          <h1 className="text-3xl font-bold text-red-500 mb-4">Something went wrong.</h1>
-          <p className="mb-4">We encountered an unexpected error.</p>
-          <pre className="bg-black/50 p-4 rounded text-left overflow-auto max-w-full text-xs text-gray-300">
+        <div style={{
+          backgroundColor: '#111827',
+          color: '#f3f4f6',
+          minHeight: '100vh',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          padding: '2rem',
+          textAlign: 'center',
+          fontFamily: 'system-ui, sans-serif'
+        }}>
+          <h1 style={{ color: '#ef4444', fontSize: '2rem', marginBottom: '1rem', fontWeight: 'bold' }}>
+            Something went wrong.
+          </h1>
+          <p style={{ marginBottom: '1rem', fontSize: '1.1rem' }}>
+            We encountered an unexpected error.
+          </p>
+          <pre style={{
+            backgroundColor: 'rgba(0,0,0,0.5)',
+            padding: '1rem',
+            borderRadius: '0.5rem',
+            textAlign: 'left',
+            overflow: 'auto',
+            maxWidth: '100%',
+            fontSize: '0.8rem',
+            color: '#d1d5db',
+            marginBottom: '1.5rem'
+          }}>
             {this.state.error?.toString()}
           </pre>
           <button 
             onClick={() => window.location.reload()} 
-            className="mt-6 px-4 py-2 bg-blue-600 rounded hover:bg-blue-500 transition-colors"
+            style={{
+              backgroundColor: '#2563eb',
+              color: 'white',
+              border: 'none',
+              padding: '0.75rem 1.5rem',
+              borderRadius: '0.375rem',
+              fontSize: '1rem',
+              cursor: 'pointer',
+              fontWeight: '500'
+            }}
           >
             Reload Application
           </button>
@@ -56,8 +91,7 @@ const ThemedApp: React.FC = () => {
   const { profile, isLoading } = useProfile();
   
   useLayoutEffect(() => {
-    // Apply theme from React state to ensure sync, 
-    // even though index.html tried to do it initially.
+    // Apply theme from React state to ensure sync
     if (!isLoading) {
       applyTheme(profile.preferences.theme);
     }

@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Great+Vibes&family=EB+Garamond:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/html-to-image@1.11.11/dist/html-to-image.js"></script>
     <style>
-      /* Define default variables immediately to prevent FOUC (Flash of Unstyled Content) */
+      /* CRITICAL: Define default variables immediately. 
+         These are the "Default/Cyberpunk" theme colors. */
       :root {
         --color-bg-primary: #0f172a;
         --color-bg-secondary: #1e293b;
@@ -31,17 +32,20 @@
         --color-correct-bg: rgba(74, 222, 128, 0.15);
       }
       
-      /* Hardcode body styles to ensure background is correct even if Tailwind is slow */
+      /* Force body styling with standard CSS to avoid FOUC (Flash of Unstyled Content) 
+         or white screen if Tailwind is slow/fails. */
       body {
         font-family: 'Poppins', sans-serif;
-        background-color: #0f172a; /* Fallback matching --color-bg-primary */
+        background-color: #0f172a; /* Hard fallback */
         background-color: var(--color-bg-primary);
-        color: #f1f5f9; /* Fallback matching --color-text-primary */
+        color: #f1f5f9; /* Hard fallback */
         color: var(--color-text-primary);
         margin: 0;
         min-height: 100vh;
+        overflow-x: hidden;
       }
 
+      /* Helper classes for immediate font availability */
       .font-mono { font-family: 'Roboto Mono', monospace; }
       .font-serif-cert { font-family: 'EB Garamond', serif; }
       .font-script { font-family: 'Great Vibes', cursive; }
@@ -66,6 +70,7 @@
       }
       .animate-key-pop { animation: key-pop 0.2s ease-out; border-radius: 3px; }
       
+      /* Print styles */
       @media print {
         body * { visibility: hidden; }
         .print-container, .print-container * { visibility: visible; }
@@ -75,17 +80,18 @@
       }
     </style>
     
-    <!-- Immediate Theme Initialization Script -->
+    <!-- Theme Initialization Script: Runs blocking to ensure variables are set before React render -->
     <script>
       (function() {
         try {
+          // Check local storage safely
           var localProfile = localStorage.getItem('typingTestUserProfile');
           var theme = 'default';
           
+          // Determine theme based on storage or system preference
           if (localProfile) {
             var parsed = JSON.parse(localProfile);
             if (parsed.preferences) {
-              // Handle system preference logic manually here to match React logic
               if (parsed.preferences.colorMode === 'system') {
                 var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
                 theme = prefersDark ? 'default' : 'arctic';
@@ -94,40 +100,31 @@
               }
             }
           } else {
-             // No profile found, default to system preference
              var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
              theme = prefersDark ? 'default' : 'arctic';
           }
 
-          // Define minimal colors for the two main starting themes to ensure immediate painting
-          // This duplicates logic from themes.ts but is necessary for the pre-React render phase.
+          // Minimal definitions for the two main starting themes to ensure fast painting
           var themeColors = {
             'default': {
               '--color-bg-primary': '#0f172a',
-              '--color-bg-secondary': '#1e293b',
               '--color-text-primary': '#f1f5f9',
-              '--color-accent-primary': '#22d3ee',
             },
             'arctic': {
               '--color-bg-primary': '#f1f5f9',
-              '--color-bg-secondary': '#ffffff',
               '--color-text-primary': '#1e293b',
-              '--color-accent-primary': '#3b82f6',
             }
           };
 
-          // If the theme exists in our mini-map, apply it immediately.
-          // If it's a custom theme (Forest/Dusk) not in this mini-map, it will fallback to CSS defaults
-          // until React loads, which is acceptable.
-          var selectedColors = themeColors[theme];
-          if (selectedColors) {
+          var selected = themeColors[theme];
+          if (selected) {
             var root = document.documentElement;
-            for (var key in selectedColors) {
-              root.style.setProperty(key, selectedColors[key]);
+            for (var key in selected) {
+              root.style.setProperty(key, selected[key]);
             }
           }
         } catch (e) {
-          console.error("Theme initialization error:", e);
+          console.warn("Theme init warning:", e);
         }
       })();
     </script>
@@ -143,6 +140,7 @@
 }
 </script>
 </head>
+  <!-- Standard CSS class for background added here as valid backup for Tailwind -->
   <body class="bg-[var(--color-bg-primary)] text-[var(--color-text-primary)] transition-colors duration-300">
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
