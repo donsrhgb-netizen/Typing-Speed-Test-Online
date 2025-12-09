@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useLayoutEffect } from 'react';
 import MainPage from './components/MainPage';
 import { ProfileProvider, useProfile } from './context/ProfileContext';
 import { applyTheme } from './utils/themes';
@@ -8,7 +8,7 @@ import { LanguageProvider } from './context/LanguageContext';
 const ThemedApp: React.FC = () => {
   const { profile, isLoading } = useProfile();
   
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!isLoading) {
       applyTheme(profile.preferences.theme);
     }

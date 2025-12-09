@@ -23,7 +23,7 @@ interface ProfileContextType {
 const ProfileContext = createContext<ProfileContextType | undefined>(undefined);
 
 export const ProfileProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const [profile, setProfile] = useState<UserProfile>(() => {
     const loadedProfile = loadProfile();
     // This check migrates users from the old 'paragraph' setting (0) to the new default.
@@ -34,16 +34,6 @@ export const ProfileProvider: React.FC<{ children: ReactNode }> = ({ children })
   });
 
   useEffect(() => {
-    // Since loadProfile is synchronous, we add a small delay to give feedback
-    // that the app is initializing and loading user settings.
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 250);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  useEffect(() => {
     if (!isLoading) {
       saveProfile(profile);
     }
@@ -52,8 +42,6 @@ export const ProfileProvider: React.FC<{ children: ReactNode }> = ({ children })
   // This effect will run when colorMode changes or when loading finishes.
   // It is responsible for setting the correct theme and for handling system preference changes.
   useEffect(() => {
-    if (isLoading) return;
-
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
     // This handler will be called when the system theme changes.
@@ -103,7 +91,7 @@ export const ProfileProvider: React.FC<{ children: ReactNode }> = ({ children })
 
     // Cleanup listener on component unmount or when dependencies change.
     return () => mediaQuery.removeEventListener('change', handleSystemThemeChange);
-  }, [isLoading, profile.preferences.colorMode]); // Rerun when loading state changes or user switches mode.
+  }, [profile.preferences.colorMode]);
 
 
   const addTestResult = (result: Omit<TypingTestResult, 'timestamp'>) => {
