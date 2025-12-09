@@ -27,6 +27,9 @@ class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundarySta
 
   componentDidCatch(error: Error, errorInfo: ErrorInfo) {
     console.error("Uncaught error:", error, errorInfo);
+    // Force remove loading fallback if it exists, so the error message is visible
+    const loader = document.getElementById('loading-fallback');
+    if (loader) loader.style.display = 'none';
   }
 
   render() {
@@ -43,7 +46,9 @@ class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundarySta
           justifyContent: 'center',
           padding: '2rem',
           textAlign: 'center',
-          fontFamily: 'system-ui, sans-serif'
+          fontFamily: 'system-ui, sans-serif',
+          zIndex: 10000,
+          position: 'relative'
         }}>
           <h1 style={{ color: '#ef4444', fontSize: '2rem', marginBottom: '1rem', fontWeight: 'bold' }}>
             Something went wrong.

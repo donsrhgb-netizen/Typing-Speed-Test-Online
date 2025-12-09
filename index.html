@@ -125,11 +125,7 @@
         var loader = document.getElementById('loading-fallback');
         if (loader && loader.style.opacity !== '0' && loader.style.display !== 'none') {
              console.warn("App took too long to load. Forcing loader removal.");
-             // We don't hide it completely yet, we just ensure error display is visible if it exists
-             // or let the user see the page if React partially rendered.
-             loader.innerHTML += '<br><div style="color: #f87171; font-size: 0.8rem; margin-top: 10px;">Taking longer than expected...</div>';
-             // Optional: Force remove if you suspect silent failure
-             // loader.style.display = 'none'; 
+             loader.style.display = 'none'; // Force hide to reveal potential underlying error UI
         }
       }, 5000);
     </script>
