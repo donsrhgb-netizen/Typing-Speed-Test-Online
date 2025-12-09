@@ -123,7 +123,11 @@ const App: React.FC = () => {
     if (loader) {
       loader.style.opacity = '0';
       // Allow the transition to finish before removing from DOM
-      setTimeout(() => loader.remove(), 500);
+      setTimeout(() => {
+          if(loader && loader.parentNode) {
+            loader.parentNode.removeChild(loader);
+          }
+      }, 500);
     }
   }, []);
 
