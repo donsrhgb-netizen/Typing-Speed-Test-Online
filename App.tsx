@@ -29,7 +29,10 @@ class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundarySta
     console.error("Uncaught error:", error, errorInfo);
     // Force remove loading fallback if it exists, so the error message is visible
     const loader = document.getElementById('loading-fallback');
-    if (loader) loader.style.display = 'none';
+    if (loader) {
+        loader.style.display = 'none';
+        loader.remove();
+    }
   }
 
   render() {
