@@ -120,14 +120,26 @@
         }
       };
       
-      // FAILSAFE: If app doesn't load in 4 seconds, kill the spinner so user isn't stuck.
+      // FAILSAFE: If app doesn't load in 3 seconds, force removal to see if there is content underneath or show error
       setTimeout(function() {
         var loader = document.getElementById('loading-fallback');
-        if (loader && loader.style.opacity !== '0' && loader.style.display !== 'none') {
-             console.warn("App took too long to load. Forcing loader removal.");
-             loader.style.display = 'none'; 
+        if (loader && loader.style.display !== 'none') {
+             // We don't just hide it, we check if root is empty.
+             var root = document.getElementById('root');
+             if (root && root.innerHTML.trim() === "") {
+                console.error("Root is empty after timeout.");
+                // Let the loading screen stay, but maybe show a message
+                var msg = document.createElement('div');
+                msg.style.color = 'red';
+                msg.style.marginTop = '10px';
+                msg.innerText = "Taking longer than expected...";
+                loader.appendChild(msg);
+             } else {
+                // If root has content, hide the loader
+                loader.style.display = 'none';
+             }
         }
-      }, 4000);
+      }, 3000);
     </script>
     
     <!-- Theme Initialization -->

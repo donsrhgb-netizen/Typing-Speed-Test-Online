@@ -15,9 +15,10 @@ try {
       <App />
     </React.StrictMode>
   );
-  // Loader removal is now handled inside App.tsx useEffect to ensure React has fully mounted.
 } catch (error) {
   console.error("Failed to mount React application:", error);
-  // Re-throw so window.onerror in index.html catches it and displays it
+  // Remove loader so the error screen from index.html (window.onerror) is visible
+  const loader = document.getElementById('loading-fallback');
+  if (loader) loader.style.display = 'none';
   throw error;
 }
